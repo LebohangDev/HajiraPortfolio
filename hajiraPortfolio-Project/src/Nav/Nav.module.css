@@ -1,0 +1,101 @@
+
+.navContainer{
+    display: grid ;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: auto;
+    align-items:center;
+    justify-items: center;
+   
+
+    margin: 0 auto;
+}
+
+
+
+.navContainer{
+    margin: 1rem;
+    
+
+}
+
+.navContainer .navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    line-height: 2px;
+    
+}
+
+
+.navContainer .navigation h1{
+
+    font-size: 1.1rem;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    transition: 0.2s ease-in-out;
+}
+
+
+.navContainer .navigation h1:hover{
+    cursor: pointer;
+    color: #e8b7fc;
+}
+
+.navContainer .navigation .activeNav{
+    color: #E6A6FF ;
+}
+
+
+.navContainer .navigation .activeNavUnderline{
+    
+    border: 1.5px solid #DC84FF;
+    display: block;
+    
+}
+
+.navContainer .navigation .notActiveUnderline{
+    display: none;
+}
+
+
+.navContainer .navigation .notActiveNav{
+    color: #D0CFCF ;
+}
+
+
+.navContainer .userTitle{
+    position: relative;
+    bottom: 10%;
+
+}
+
+.navContainer .userTitle h1{
+    font-size: 5.7rem;
+    color: #FF77CD;
+    margin: 0;
+    font-family: "Inspiration", cursive;
+    font-weight: 400;
+   
+    font-style: normal;
+
+
+}
+
+
+
+.navContainer .socialIcons{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+
+.navContainer .socialIcons img{
+
+    width: 1.2rem;
+    height: 1.2rem;
+    object-fit: cover;
+    
+    
+}
