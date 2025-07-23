@@ -24,11 +24,11 @@ function Nav({setActive, active}){
                 <h1>Hajira</h1>
             </div>
             <div className={styles.socialIcons}>
-                <img src="/Images/socialIcons/whatsapp-Icon.png" alt="whatsapp" />
-                <img src="/Images/socialIcons/youtube-Icon.png" alt="youtube" />
-                <img src="/Images/socialIcons/instagram-Icon.png" alt="instagram" />
-                <img src="/Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
-                <img src="/Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
+                <img src="Images/socialIcons/whatsapp-Icon.png" alt="whatsapp" />
+                <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
+                <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
+                <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
+                <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
               
             </div>
 

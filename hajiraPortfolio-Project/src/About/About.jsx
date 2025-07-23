@@ -13,20 +13,20 @@ function About(){
                     </div>
                     <div className={styles.userIMGContainer}>
                         <div className={styles.user}>
-                            <img src="/Images/Hajira/hajiraAbout.png" alt="" />
+                            <img src="Images/Hajira/hajiraAbout.png" alt="" />
 
                         </div>
                         
 
                         <div className={styles.socialIcons}>
-                            <img src="/Images/socialIcons/youtube-Icon.png" alt="youtube" />
-                            <img src="/Images/socialIcons/youtube-Icon.png" alt="youtube" />
+                            <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
+                            <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
+                            <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
                             <img src="/Images/socialIcons/instagram-Icon.png" alt="instagram" />
-                            <img src="/Images/socialIcons/instagram-Icon.png" alt="instagram" />
-                            <img src="/Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
-                            <img src="/Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
-                            <img src="/Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
-                            <img src="/Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
+                            <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
+                            <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
+                            <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
+                            <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
                         </div>
 
                     </div>

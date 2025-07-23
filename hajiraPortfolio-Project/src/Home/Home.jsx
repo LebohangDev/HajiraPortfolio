@@ -52,7 +52,7 @@ function Home(){
         <div className={styles.homeContainer}>
             <div className={styles.heroSection}>
                 <div className={styles.sakura_Tree}>
-                        <img src="/Images/sakura_Tree.png" alt="" />
+                        <img src="Images/sakura_Tree.png" alt="" />
                 </div>
                
                 <div className={styles.section1}>
@@ -76,9 +76,9 @@ function Home(){
 
                 <div className={styles.section2}>
                     <div className={styles.userImg}>
-                        <img src="/Images/Hajira/hajiraHome.png" alt="" />
+                        <img src="Images/Hajira/hajiraHome.png" alt="" />
                         <div className={styles.blob}>
-                            <img src="/Images/Hajira/background-Blob.png" alt="" />  
+                            <img src="Images/Hajira/background-Blob.png" alt="" />  
 
                         </div>
                         
@@ -94,9 +94,9 @@ function Home(){
 
                     </div>
                     <div className={styles.dots}>
-                        <img src="/Images/dots/dot1.png" alt="" />
-                        <img src="/Images/dots/dot2.png" alt="" />
-                        <img src="/Images/dots/dot3.png" alt="" />
+                        <img src="Images/dots/dot1.png" alt="" />
+                        <img src="Images/dots/dot2.png" alt="" />
+                        <img src="Images/dots/dot3.png" alt="" />
                     </div>
         
 
@@ -213,13 +213,13 @@ function Home(){
                     </div>
 
                     <div className={styles.adCompanies}>
-                        <img src="/Images/Companies/Activia_Logo.png" alt="" />
-                        <img src="/Images/Companies/QV_Logo.png" alt="" />
-                        <img src="/Images/Companies/DU_Logo.png" alt="" />
-                        <img src="/Images/Companies/Mcdonalds_Logo.png" alt="" />
-                        <img src="/Images/Companies/Dunkin_Logo.png" alt="" />
-                        <img src="/Images/Companies/Adnoc_Logo.png" alt="" />
-                        <img src="/Images/Companies/Bath_Logo.png" alt="" />
+                        <img src="Images/Companies/Activia_Logo.png" alt="" />
+                        <img src="Images/Companies/QV_Logo.png" alt="" />
+                        <img src="Images/Companies/DU_Logo.png" alt="" />
+                        <img src="Images/Companies/Mcdonalds_Logo.png" alt="" />
+                        <img src="Images/Companies/Dunkin_Logo.png" alt="" />
+                        <img src="Images/Companies/Adnoc_Logo.png" alt="" />
+                        <img src="Images/Companies/Bath_Logo.png" alt="" />
                     </div>
                     
                     
