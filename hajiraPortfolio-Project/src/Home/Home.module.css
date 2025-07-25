@@ -1,17 +1,68 @@
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        left: -20px;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+    }
+}
 
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translatey(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+
+@keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+         transform: translateY( 0px);
+    }
+}
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+       
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
 
 .homeContainer{
     display: grid;
     grid-template-columns: 1fr auto;
     height: 100%;
-    grid-template-rows: 45rem 30rem 40rem 60rem 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: relative;
-    
 
-    scrollbar-width: none;
-    scroll-behavior: smooth;
+    grid-template-rows: 45rem 30rem 40rem 1fr ;
+    overflow: hidden;
+   
     
 }
 
@@ -40,7 +91,7 @@
 .homeContainer .heroSection .section1 .title{
     line-height: 2rem;
     position: relative;
-    z-index: 10000;
+    z-index: 1000;
   
    
 }
@@ -60,6 +111,10 @@
     font-size: 10rem;
     color: #565656;
     letter-spacing: 10px;
+    opacity: 0;
+    position: relative;
+    left: 0px;
+    animation: 0.4s fadeInRight forwards ;
    
     
     
@@ -77,6 +132,10 @@
     color: #565656;
     letter-spacing: 20px;
     margin-bottom: 4rem;
+    right: 0px;
+    opacity: 0;
+    animation: 0.4s fadeInDown forwards ;
+    animation-delay: 0.2s;
 
      
 
@@ -101,6 +160,9 @@
     top: 0;
     box-shadow: 2px 4px 20px #f763be;
     transition: 0.2s ease-in-out;
+    opacity: 0;
+    animation: 0.1s fadeInDown forwards ;
+    animation-delay: 0.3s;
     
 
 }
@@ -157,6 +219,10 @@
     bottom: -70%;
     left: -36%;
     z-index: 1000;
+    right: 0;
+    opacity: 0;
+    animation: 0.7s fadeInLeft forwards;
+    animation-delay: 0.3s;
 }
 
 
@@ -184,6 +250,7 @@
     
     bottom: 4%;
     
+    animation:0.7s fadeIn ease-in-out ;
     
     width: 100%;
     height: 100%;
@@ -198,6 +265,7 @@
     height: 47rem;
     object-fit: cover;
     z-index: 3;
+    animation:0.7s fadeInTop ease-in-out ;
 
 }
 
@@ -339,6 +407,12 @@
     grid-template-rows: 34rem auto;
     align-items: start;
     position: relative;
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard:nth-child(1){
+    animation: 0.3s fadeInDown ease-in-out;
+
 }
 
 
@@ -521,14 +595,25 @@
     font-style: normal; 
     transition: 0.4s ease-in-out;
     position: relative;
+ 
     top: 0;
     
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content2 .followButton:nth-child(1){
+    position: relative;
+    z-index: 10000;
+    position: relative;
+    z-index: 10000;
 }
 
 
 .homeContainer .socialsSection .socialsContainer .socialCard .content2 .followButton button{
     border: none;
    background-color: transparent;
+   position: relative;
+   z-index: 10000;
    
 }
 
@@ -615,9 +700,9 @@
 .homeContainer .collaborationsSection .collaborationsContainer .contents .content1  .collaborationsHeader{
     position: absolute;
     transform: rotate(-6deg);
-    
-    bottom: 50%;
-    z-index: 1000;
+    width: fit-content;
+    bottom: 80%;
+    z-index: 100;
 }
 
 
@@ -632,6 +717,8 @@
     font-family: "Knewave", system-ui;
     font-weight: 400;
     font-style: normal;
+    margin: 0;
+    
     
     
 }
@@ -839,16 +926,25 @@
 .homeContainer .collaborationsSection .collaborationsContainer .adCompanies img{
 
     height: 30px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .adCompanies img:hover{
+    transform: translateY(-4px);
+
 }
 
 
 .homeContainer .collaborationsSection .collaborationsContainer .adCompanies img:nth-child(6){
-    height: 50px;
+    height: 80px;
+    
 }
 
 
 .homeContainer .collaborationsSection .collaborationsContainer .adCompanies img:nth-child(7){
-    height: 50px;
+    height: 120px;
 }
 
 
@@ -870,6 +966,7 @@
     padding-top: 8%;
     position: relative;
     grid-row: 4;
+    
 }
 
 
@@ -878,6 +975,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+}
+
+.footer{
+    grid-row: 5;
+    background-color: #FFD4EF;
+    height: 30%;
 
 }
 

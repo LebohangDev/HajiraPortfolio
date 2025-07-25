@@ -1,4 +1,7 @@
 import styles from './Home.module.css';
+
+import { motion} from "framer-motion"
+
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 function Home(){
@@ -45,6 +48,21 @@ function Home(){
         { img: 'Images/ImagePreview/img13.jpg' },
         { img: 'Images/ImagePreview/img14.jpg' },
     ];
+
+     let companyIMAGES = [
+        { img: 'Images/Companies/Activia_Logo.png' },
+        { img: 'Images/Companies/QV_Logo.png' },
+        { img: 'Images/Companies/DU_Logo.png' },
+        { img: 'Images/Companies/Mcdonalds_Logo.png' },
+        { img: 'Images/Companies/Dunkin_Logo.png' },
+        { img: 'Images/Companies/Adnoc_Logo.png' },
+        { img: 'Images/Companies/Dubai_Logo.png' },
+        { img: 'Images/Companies/Bath_Logo.png' },
+        
+    ];
+ 
+
+    
 
     return(
         <>
@@ -105,11 +123,21 @@ function Home(){
             </div>
             <div className={styles.socialsSection}>
                 
-
                 <div className={styles.socialsContainer}>
                    
 
+                   
+
                     {Socials.map((S, index) =>(
+                        <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: -30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.3, once: false }}
+                        transition={{ delay: index * 0.1,}}
+                        className={styles.socialCard}
+                        >
+                        
                         <div className={styles.socialCard} key={index}>
                            {index === 2 && <div className={styles.socialsHeader}>
                                 <h1>#TEAMHAJRA</h1>
@@ -153,11 +181,20 @@ function Home(){
 
                             
                         </div>
+                        </motion.div>
 
                     ))}
 
 
                 </div>
+
+
+
+                    
+                
+                
+
+
                 
             </div>
             <div className={styles.collaborationsSection}>
@@ -213,14 +250,31 @@ function Home(){
                     </div>
 
                     <div className={styles.adCompanies}>
-                        <img src="Images/Companies/Activia_Logo.png" alt="" />
-                        <img src="Images/Companies/QV_Logo.png" alt="" />
-                        <img src="Images/Companies/DU_Logo.png" alt="" />
-                        <img src="Images/Companies/Mcdonalds_Logo.png" alt="" />
-                        <img src="Images/Companies/Dunkin_Logo.png" alt="" />
-                        <img src="Images/Companies/Adnoc_Logo.png" alt="" />
-                        <img src="Images/Companies/Bath_Logo.png" alt="" />
+                        {companyIMAGES.map((CI, index) =>(
+                            <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: -30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ amount: 0.1, once: false }}
+                            transition={{ delay: index * 0.05,}}
+                    
+                            >
+
+                                <img src={CI.img} alt="" />
+                                    
+                       
+                   
+                                
+                            </motion.div>
+
+                        ))}
+
                     </div>
+
+
+                   
+
+                    
                     
                     
                     
@@ -237,10 +291,20 @@ function Home(){
                         <Masonry columnsCount={3} gutter="15rem">
 
                             {masonryIMAGES.map((MI, index) =>(
+                                <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: -30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ amount: 0.1, once: false }}
+                                transition={{ delay: index * 0.1,}}
+                                className={styles.socialCard}
+                                >
+                                
                         
-                                <div className={styles.ProjectImg} key={index} >
-                                    <img src={MI.img} alt='' />
-                                </div>
+                                    <div className={styles.ProjectImg} key={index} >
+                                        <img src={MI.img} alt='' />
+                                    </div>
+                                </motion.div>
                             
 
                             
@@ -257,8 +321,13 @@ function Home(){
             </ResponsiveMasonry>
                 </div>
             </div>
+
+            
+           
+            
             
         </div>
+        
         
         </>
     )

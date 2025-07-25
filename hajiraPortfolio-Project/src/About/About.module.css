@@ -1,4 +1,59 @@
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translatey(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+
+@keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+         transform: translateY( 0px);
+    }
+}
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+       
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
 
 .aboutSection{
     background-color: #FFFBFF ;
@@ -9,9 +64,10 @@
 .aboutContainer{
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     margin: 0 auto;
     width: 90rem;
+    height: 75vh;
     position: relative;
     gap: 10%;
    
@@ -41,6 +97,8 @@
     font-family: "Italiana", sans-serif;
     font-weight: 400;
     font-style: normal;
+    opacity: 0;
+    animation: 0.4s fadeInRight forwards;
     
 }
 
@@ -54,7 +112,10 @@
     font-weight: 200;
     font-style: normal;
     position: relative;
-    left: 2%;
+    opacity: 0;
+    animation: 0.4s fadeInDown forwards;
+    animation-delay: 0.3s;
+    
 
 }
 
@@ -72,12 +133,17 @@
     width: 100%;
     position: relative;
     z-index: 1000;
+    opacity: 0;
+    animation: 0.8s fadeInTop forwards;
+    animation-delay: 0.5s;
 }
 
 
 
 .aboutContainer .section1 .userIMGContainer .socialIcons{
     position: absolute;
+    animation: fadeInTop 0.6s forwards;
+    opacity: 0;
 
 }
 
@@ -90,6 +156,8 @@
     bottom: 29rem;
     left: 23rem;
     transform: rotate(-30deg);
+
+    animation-delay: 0s;
 }
 
 
@@ -100,6 +168,7 @@
     bottom: 5rem;
     left: 5.5rem;
     transform: rotate(30deg);
+    animation-delay: 0.1s;
 }
 
 
@@ -112,6 +181,7 @@
     bottom: 16rem;
     left: 5rem;
     transform: rotate(30deg);
+    animation-delay: 0.2s;
 }
 
 
@@ -123,6 +193,8 @@
     bottom: 6rem;
     left: 32rem;
     transform: rotate(-30deg);
+
+    animation-delay: 0.3s;
 }
 
 
@@ -133,6 +205,7 @@
     position: absolute;
     bottom: 10rem;
     left: -5rem;
+    animation-delay: 0.4s;
     
 }
 
@@ -145,6 +218,7 @@
     bottom: 20rem;
     left: -3rem;
     transform: rotate(-30deg);
+    animation-delay: 0.5s;
 }
 
 
@@ -156,6 +230,7 @@
     bottom: 27rem;
     left: -3rem;
     transform: rotate(-30deg);
+    animation-delay: 0.6s;
     
 }
 
@@ -168,6 +243,7 @@
     bottom: 9rem;
     left: 26rem;
     transform: rotate(5deg);
+    animation-delay: 0.7s;
     
 
 }
@@ -254,6 +330,9 @@
     background-color: #FFF0F8 ;
     border-radius: 16px;
     padding: 1rem;
+    opacity: 0;
+    animation: 0.6s fadeIn forwards;
+    animation-delay: 0.4s;
 }
 
 .aboutContainer .section2 .statsCard .stat2{
@@ -261,6 +340,9 @@
     background-color: #FFF0F8 ;
     border-radius: 16px;
     padding: 1rem;
+    opacity: 0;
+    animation: 0.6s fadeIn forwards;
+    animation-delay: 0.6s;
 }
 
 
@@ -269,6 +351,9 @@
     background-color: #FFF0F8 ;
     border-radius: 16px;
     padding: 1rem;
+    opacity: 0;
+    animation: 0.6s fadeIn forwards;
+    animation-delay: 0.8s;
 }
 
 
@@ -277,4 +362,7 @@
     background-color: #FFF0F8 ;
     border-radius: 16px;
     padding: 1rem;
+    opacity: 0;
+    animation: 0.6s fadeIn forwards;
+    animation-delay: 1s;
 }

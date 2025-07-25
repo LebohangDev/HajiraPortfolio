@@ -22,7 +22,7 @@ function About(){
                             <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
                             <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
                             <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
-                            <img src="/Images/socialIcons/instagram-Icon.png" alt="instagram" />
+                            <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
                             <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
                             <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
                             <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />

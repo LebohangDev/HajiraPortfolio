@@ -4,7 +4,7 @@ function Nav({setActive, active}){
 
     return(
         <>
-
+        <div className={styles.navSection}>
         <div className={styles.navContainer}>
             <div className={styles.navigation}>
                 <div className={active === 'Home' ? styles.activeNav : styles.notActiveNav}>
@@ -33,6 +33,10 @@ function Nav({setActive, active}){
             </div>
 
         </div>
+
+        </div>
+
+        
         </>
     )
 }

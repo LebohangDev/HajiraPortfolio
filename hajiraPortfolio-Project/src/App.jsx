@@ -1,12 +1,22 @@
 import Nav from "./Nav/Nav.jsx";
 import Home from "./Home/Home.jsx";
 import About from "./About/About.jsx";
-import { useState } from "react";
+import Footer from "./Footer/Footer.jsx";
+import { useState, useEffect } from "react";
+import { AnimatePresence, motion} from "framer-motion"
 
 
 function App() {
 
+ 
+
   const [active, setActive] = useState('Home');
+
+
+  useEffect( () =>{
+    window.scrollTo(0, 0)
+
+  }, [active])
 
 
   return (
@@ -18,21 +28,28 @@ function App() {
 
     <div className="Content">
       <div className={active === 'Home' ? 'activeSection' : 'notActive'}>
-        <Home/>
+        <Home active={active}/>
+        
 
       </div>
 
 
       <div className={active === 'About' ? 'activeSection' : 'notActive'}>
         <About/>
+        
 
       </div>
+     
+      
 
     </div>
-
-    <div className="Footer">
+    <div className="footer">
+      <Footer setActive= {setActive} active={active}/>
 
     </div>
+    
+    
+
       
     </>
   )

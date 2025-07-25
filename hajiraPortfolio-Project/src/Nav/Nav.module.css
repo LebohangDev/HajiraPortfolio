@@ -1,10 +1,30 @@
 
-.navContainer{
+.navSection{
     display: grid ;
     grid-template-columns: repeat(3, 3fr);
     grid-template-rows: auto;
     align-items:center;
     justify-items: center;
+   position: relative;
+   
+   width: 100%;
+   gap: 6rem;
+
+    margin: 1rem auto;
+}
+
+
+.navSection .navContainer{
+    display: grid ;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: auto;
+    align-items:center;
+    justify-items: center;
+   position: fixed;
+   background-color: white;
+   z-index: 10000;
+   width: 110rem;
+   height: 7rem;
    
 
     margin: 0 auto;
@@ -12,11 +32,7 @@
 
 
 
-.navContainer{
-    margin: 1rem;
-    
 
-}
 
 .navContainer .navigation{
     display: flex;

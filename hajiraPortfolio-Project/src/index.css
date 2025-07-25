@@ -1,19 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Italiana&family=Italianno&family=Knewave&family=Noto+Sans+Javanese:wght@400..700&display=swap');
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+       
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+
 :root{
   font-size: 90%;
-  overflow-x: hidden;
+   overflow-y: scroll;
+  scroll-behavior: smooth;
   scrollbar-width: none;
+  
+
+  
 }
 
 #root {
   background-color: white;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 8rem 100% auto;
-  width: 100%;
-  height: 100vh;
-  
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
+  gap: 6rem;
+
+ 
+ 
+  
+
+  
+  
+  
+  
+
   
   
 }
@@ -23,16 +48,26 @@ body {
   margin: 0;
   
 }
-
 .header{
-  grid-area: 1/1;
+ 
+ 
+  z-index: 10000;
+  position: relative;
+  top: 2.5rem;
 }
-.content{
-  grid-area: 2/1;
+
+.footer{
+
+  background-color: #FFD4EF ;
+  overflow: hidden;
+  z-index: 10000;
+  position: relative;
+
 }
 
 .activeSection{
   display: block;
+  animation: fadeIn 0.8s ease-in-out;
  
 
 }
