@@ -96,11 +96,12 @@ function Home(){
                     <div className={styles.section2}>
                         <div className={styles.userImg}>
                             <img src="Images/Hajira/hajiraHome.png" alt="" />
-                            <div className={styles.blob}>
+                           
+                        
+                        </div>
+                        <div className={styles.blob}>
                                 <img src="Images/Hajira/background-Blob.png" alt="" />  
 
-                            </div>
-                        
                         </div>
                    
                    
