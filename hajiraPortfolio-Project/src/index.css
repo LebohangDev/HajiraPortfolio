@@ -15,33 +15,27 @@
 
 :root{
   font-size: 90%;
-   overflow-y: scroll;
+ 
+  
+  
+
+  
+}
+
+#root{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9rem 1fr 100vh;
+  height: 100%;
+
+  overflow-y: scroll;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  
-
-  
+  position: relative;
 }
 
-#root {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  gap: 6rem;
 
- 
- 
-  
-
-  
-  
-  
-  
-
-  
-  
-}
 
 
 body {
@@ -61,7 +55,7 @@ body {
 }
 .footer{
 
-  background-color: #FFD4EF ;
+ 
   overflow: hidden;
   z-index: 1000;
   position: relative;
