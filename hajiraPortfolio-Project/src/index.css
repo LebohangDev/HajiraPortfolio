@@ -55,12 +55,15 @@ body {
   position: relative;
   top: 2.5rem;
 }
-
+.Content{
+  position: relative;
+ 
+}
 .footer{
 
   background-color: #FFD4EF ;
   overflow: hidden;
-  z-index: 10000;
+  z-index: 1000;
   position: relative;
 
 }
@@ -74,6 +77,23 @@ body {
 
 .notActive{
   display: none;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  
+:root{
+  font-size: 65%;
+ 
+  
+
+  
+}
+
+
 
 }
 

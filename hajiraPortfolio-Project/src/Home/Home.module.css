@@ -59,6 +59,7 @@
     display: grid;
     grid-template-columns: 1fr auto;
     height: 100%;
+    width: 100%;
 
     grid-template-rows: 45rem 30rem 40rem 1fr ;
     overflow: hidden;
@@ -68,27 +69,36 @@
 
 .homeContainer .heroSection{
     display: grid;
-    width: fit-content;
-    grid-template-columns: 20rem 34rem 30rem;
+    width: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-column: 1/-1 ;
+    
     margin: 0 auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    
     position: relative;
     
     
     
 }
 
+.homeContainer .heroSection .heroContainer{
+    display: grid;
 
-.homeContainer .heroSection .section1{
-    grid-column: 1;
-    
+    grid-template-columns: 20rem 30rem auto;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 
-.homeContainer .heroSection .section1 .title{
+.homeContainer .heroSection .heroContainer .section1{
+    grid-column: 1;
+}
+
+
+
+.homeContainer .heroSection .heroContainer .section1  .title{
     line-height: 2rem;
     position: relative;
     z-index: 1000;
@@ -97,14 +107,14 @@
 }
 
 
-.homeContainer .heroSection .section1 .title h1 span{
+.homeContainer .heroSection .heroContainer .section1 .title h1 span{
     color: #FF77CD;
 
     
 }
 
 
-.homeContainer .heroSection .section1 .title h1:nth-child(1){
+.homeContainer .heroSection .heroContainer .section1 .title h1:nth-child(1){
     font-family: "Italiana", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -122,7 +132,7 @@
 
 }
 
-.homeContainer .heroSection .section1 .title h1:nth-child(2){
+.homeContainer .heroSection .heroContainer .section1 .title h1:nth-child(2){
     font-family: "Italianno", cursive;
     font-weight: 100;
     font-style: normal;
@@ -143,7 +153,7 @@
 }
 
 
-.homeContainer .heroSection .section1 .seeMoreButton{
+.homeContainer .heroSection .heroContainer .section1 .seeMoreButton{
     background: linear-gradient(to right, #491636 0%, #C83E95 100%);
     width: fit-content;
     white-space: nowrap;
@@ -168,7 +178,7 @@
 }
 
 
-.homeContainer .heroSection .section1 .seeMoreButton:hover{
+.homeContainer .heroSection .heroContainer .section1 .seeMoreButton:hover{
     box-shadow: 5px 5px 40px #f763be;
     top: -0.2%;
     cursor: pointer;
@@ -177,12 +187,12 @@
 }
 
 
-.homeContainer .heroSection .section1 .seeMoreButton:active{
+.homeContainer .heroSection .heroContainer .section1 .seeMoreButton:active{
      background: linear-gradient(to right, #491636 0%, #af3683 100%);
 }
 
 
-.homeContainer .heroSection .section1 .seeMoreButton button{
+.homeContainer .heroSection .heroContainer .section1 .seeMoreButton button{
     border: none;
     background-color: transparent;
     color: white;
@@ -195,14 +205,14 @@
 }
 
 
-.homeContainer .heroSection .section1 .seeMoreButton button:hover{
+.homeContainer .heroSection .heroContainer .section1 .seeMoreButton button:hover{
     cursor: pointer;
 }
 
 
 
 
-.homeContainer .heroSection .section1 .seeMoreButton i{
+.homeContainer .heroSection .heroContainer .section1 .seeMoreButton i{
     border: none;
     border-radius: 100px;
     padding: 0.4rem;
@@ -214,10 +224,10 @@
 }
 
 
-.homeContainer .heroSection .sakura_Tree{
+.homeContainer .heroSection .heroContainer .sakura_Tree{
     position: absolute;
     bottom: -70%;
-    left: -36%;
+    left: -25%;
     z-index: 1000;
     right: 0;
     opacity: 0;
@@ -226,24 +236,24 @@
 }
 
 
-.homeContainer .heroSection .sakura_Tree:hover{
+.homeContainer .heroSection .heroContainer .sakura_Tree:hover{
     pointer-events: none;
 }
 
 
-.homeContainer .heroSection .sakura_Tree img{
+.homeContainer .heroSection .heroContainer .sakura_Tree img{
     
     height: 120rem;
 }
 
 
 
-.homeContainer .heroSection .section2{
+.homeContainer .heroSection .heroContainer .section2{
     grid-column: 2;
 }
 
 
-.homeContainer .heroSection .section2 .userImg{
+.homeContainer .heroSection .heroContainer .section2 .userImg{
     position: relative;
     
     left: 14%;
@@ -258,7 +268,7 @@
 }
 
 
-.homeContainer .heroSection .section2 .userImg img{
+.homeContainer .heroSection .heroContainer .section2 .userImg img{
 
     position: absolute;
     width: fit-content;
@@ -270,7 +280,7 @@
 }
 
 
-.homeContainer .heroSection .section2 .blob{
+.homeContainer .heroSection .heroContainer .section2 .blob{
     width: 100%;
     height: 100%;
     position: relative;
@@ -281,7 +291,7 @@
 }
 
 
-.homeContainer .heroSection .section2 .blob img{
+.homeContainer .heroSection .heroContainer .section2 .blob img{
     position: absolute;
     width: fit-content;
     height: 47rem;
@@ -293,7 +303,7 @@
 
 
 
-.homeContainer .heroSection .section3{
+.homeContainer .heroSection .heroContainer .section3{
     grid-column: 3;
     display: flex;
     flex-direction: column;
@@ -307,7 +317,7 @@
 
 
 
-.homeContainer .heroSection .section3 .userQuote{
+.homeContainer .heroSection .heroContainer .section3 .userQuote{
     position: relative;
     z-index: 50;
     top: 10%;
@@ -315,7 +325,7 @@
 }
 
 
-.homeContainer .heroSection .section3 .userQuote p{
+.homeContainer .heroSection .heroContainer .section3 .userQuote p{
     font-size: 1rem;
     width: 35rem;
     white-space: normal ;
@@ -331,7 +341,7 @@
 
 
 
-.homeContainer .heroSection .section3 .userQuote p span{
+.homeContainer .heroSection .heroContainer .section3 .userQuote p span{
     color: #B700FF ;
     
 }
@@ -339,14 +349,14 @@
 
 
 
-.homeContainer .heroSection .section3 .dots{
+.homeContainer .heroSection .heroContainer .section3 .dots{
     display: flex;
     flex-direction: row;
     gap: 0.2rem;
 }
 
 
-.homeContainer .heroSection .section3 .dots img{
+.homeContainer .heroSection .heroContainer .section3 .dots img{
     width: 15px;
     height: 15px;
     object-fit: cover;
@@ -368,6 +378,7 @@
     width: 100%;
     height:100%;
     position: relative;
+    grid-row: 2;
     z-index: 100;
    
     
@@ -986,6 +997,112 @@
 }
 
 
+
+
+
+@media (max-width: 768px) {
+
+    .homeContainer{
+
+    grid-template-rows: 8% 4% 40rem 1fr ;
+    
+   
+    
+}
+
+.homeContainer .heroSection{
+   display: grid;
+   grid-template-columns: 1fr;
+   
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+   position: relative;
+    
+
+  
+    
+    
+    
+}
+
+.homeContainer .heroSection .heroContainer{
+    display: grid;
+   position: relative;
+   width: fit-content;
+   justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem auto;
+    margin: 0 auto;
+    justify-items: center;
+    
+}
+
+
+.homeContainer .heroSection .heroContainer .section1{
+   
+}
+
+
+
+.homeContainer .heroSection .heroContainer .section1 .title h1:nth-child(1){
+  
+    font-size: 4rem;
+    
+   
+    
+    
+
+
+}
+
+.homeContainer .heroSection .heroContainer .section1 .title h1:nth-child(2){
+ 
+    font-size: 5rem;
+   
+
+     
+
+
+}
+
+.homeContainer .heroSection .heroContainer .section2{
+    grid-column: 1;
+}
+
+
+
+.homeContainer .heroSection .heroContainer .section2 .userImg img{
+
+    
+    height: 30rem;
+    
+
+}
+
+
+
+
+.homeContainer .heroSection .heroContainer .section2 .blob img{
+   
+    
+    height: 30rem;
+   
+    
+}
+
+.homeContainer .heroSection .heroContainer .section3{
+    grid-column: 1;
+}
+
+
+.homeContainer .heroSection .sakura_Tree{
+    display: none;
+}
+
+
+
+}
 
 
 

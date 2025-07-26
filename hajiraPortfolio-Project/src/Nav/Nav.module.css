@@ -7,7 +7,7 @@
     justify-items: center;
    position: relative;
    
-   width: 100%;
+   width: 100vw;
    gap: 6rem;
 
     margin: 1rem auto;
@@ -23,7 +23,7 @@
    position: fixed;
    background-color: white;
    z-index: 10000;
-   width: 110rem;
+   width: 100vw;
    height: 7rem;
    
 
@@ -114,4 +114,224 @@
     object-fit: cover;
     
     
+}
+
+
+.hamburgerSection{
+        display: none;
+    }
+
+.hamburgerMenuActive{
+    display: none;
+}
+
+.hamburgerMenuNotActive{
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    
+    .navSection{
+        display: none;
+        
+    }
+
+    
+
+    .hamburgerSection{
+        
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        top: 0%;
+    
+    }
+
+    .hamburgerSection .hamburgerContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+        
+        width: 35rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        align-items: center;
+        position: relative;
+    }
+    .hamburgerSection .hamburgerContainer .userTitle{
+        grid-column: 1;
+      
+    }
+
+    .hamburgerSection .hamburgerContainer .userTitle h1{
+        
+        font-size: 9rem;
+        color: #FF77CD;
+        margin: 0;
+        font-family: "Inspiration", cursive;
+        font-weight: 400;
+   
+        font-style: normal;
+    }
+    .hamburgerSection .hamburgerContainer .hamburgerIcon{
+        grid-column: 2;
+    }
+
+    .hamburgerSection .hamburgerContainer .hamburgerIcon i{
+        font-size: 2.2rem;
+    }
+
+    .hamburgerMenuActive{
+        background-color: white;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 22rem 30rem auto;
+        margin: 0 auto;
+        
+        
+        
+    }
+
+     .hamburgerMenuActive .menuContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6rem 72% 4rem;
+        margin: 0 auto;
+        height: 100vh;
+        z-index: 10000;
+        position: relative;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    
+     .hamburgerMenuActive .menuContainer .header{
+        position: relative;
+        right: 7%;
+     }
+
+    
+     .hamburgerMenuActive .menuContainer .header i{
+        font-size: 7.5rem;
+        color: #FFCDED ;
+        border: none;
+       
+
+    }
+
+    
+     .hamburgerMenuActive .menuContainer .menuNavigation{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 12%;
+     }
+
+     
+     .hamburgerMenuActive .menuContainer .menuNavigation .title h1{
+        font-size: 4rem;
+        font-family: "Italiana", sans-serif;
+        font-weight: 400;
+        letter-spacing: 6px;
+        font-style: normal;
+        color: #0B0A0A ;
+     }
+
+     
+     .hamburgerMenuActive .menuContainer .menuNavigation .activeNav{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 2%;
+        
+     }
+
+     
+     .hamburgerMenuActive .menuContainer .menuNavigation .activeNav i{
+        font-size: 2.5rem;
+        color: #FFBEE7;
+        
+     }
+
+     
+     .hamburgerMenuActive .menuContainer .menuNavigation .activeNav h1{
+        color: #E6A6FF ;
+        font-family: "Istok Web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 4px;
+        font-size: 2.1rem;
+     }
+     .hamburgerMenuActive .menuContainer .menuNavigation .notActiveNav{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 2%;
+     }
+
+     
+     
+     .hamburgerMenuActive .menuContainer .menuNavigation .notActiveNav i{
+        font-size: 2.5rem;
+        color: #FFBEE7;
+        
+     }
+
+     
+     .hamburgerMenuActive .menuContainer .menuNavigation .notActiveNav h1{
+        color: #C4C4C4 ;
+        font-family: "Istok Web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 4px;
+        font-size: 2.1rem;
+     }
+
+
+     
+     .hamburgerMenuActive .menuContainer .menuSocials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8%;
+     }
+
+     
+     .hamburgerMenuActive .menuContainer .menuSocials img{
+        width: 20px;
+        height: 20px;
+     }
+
+     
+     .hamburgerMenuActive .menuContainer .menuBottom{
+        text-align: center;
+     }
+
+     
+     .hamburgerMenuActive .menuContainer .menuBottom h1{
+        color: #FFB7F8;
+        font-size: 3.2rem;
+        font-family: "Knewave", system-ui;
+        font-weight: 400;
+        font-style: normal;
+
+     }
+
+    .hamburgerMenuNotActive{
+        display: none;
+    }
+
 }

@@ -58,6 +58,10 @@
 .aboutSection{
     background-color: #FFFBFF ;
     position: relative;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 
 }
 
@@ -66,8 +70,9 @@
     grid-template-columns: repeat(1, 2fr);
     grid-template-rows: auto;
     margin: 0 auto;
+    
     width: 90rem;
-    height: 75vh;
+    height: 150%;
     position: relative;
     gap: 10%;
    
@@ -130,7 +135,7 @@
 
 
 .aboutContainer .section1 .userIMGContainer .user img{
-    width: 100%;
+    width: 38rem;
     position: relative;
     z-index: 1000;
     opacity: 0;
