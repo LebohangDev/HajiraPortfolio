@@ -11,7 +11,7 @@ function Home(){
             social: 'Instagram',
             description: 'Fashion | Lifestyle | Creator Just a girl who drives with elite music taste',
             followers: 2450,
-            img:'Images/SocialImages/RUNNER-UP3.jpg',
+            img:'Images/SocialImages/haju1.jpg',
             icon:'Images/socialIcons/instagram-Icon.png',
             posts: 132
         },
@@ -19,7 +19,7 @@ function Home(){
             social: 'TikTok',
             description: 'Fast-paced, trend-savvy videos built for engagement',
             followers: 7600,
-            img:'Images/SocialImages/RUNNER-UP4.jpg',
+            img:'Images/SocialImages/haju2.jpg',
             icon:'Images/socialIcons/tiktok-Icon.png',
             posts: 89
         },
@@ -27,7 +27,7 @@ function Home(){
             social: 'YouTube',
             description: 'A collection of long-form content, vlogs, and curated Shorts that blend storytelling with creativity',
             followers: 1800,
-            img:'Images/SocialImages/Smart-Coffee-Mug3.jpg',
+            img:'Images/SocialImages/haju3.jpg',
             icon:'Images/socialIcons/youtube-Icon.png',
             posts: 42
         }

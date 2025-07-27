@@ -83,7 +83,7 @@ body {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   
 :root{
   font-size: 65%;
@@ -109,6 +109,33 @@ body {
   position: relative;
 }
 
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  :root{
+  font-size: 75%;
+ 
+  
+
+  
+}
+  #root{
+  background-color: white;
+  display: grid;
+  grid-template-columns: minmax(0, 100%);
+  grid-template-rows: 7rem 1fr 48vh;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  position: relative;
+}
 
 
 }

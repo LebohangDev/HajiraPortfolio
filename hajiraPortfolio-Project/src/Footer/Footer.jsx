@@ -17,7 +17,7 @@ function Footer({setActive, active}){
                         
                     </div>
                     <div className={active === 'About' ? styles.activeNav : styles.notActiveNav}>
-                        <h1 onClick={ (e) => {e.preventDefault(); setActive('About')}}>About</h1>
+                        <h1 onClick={ (e) => {e.preventDefault();}}>Product</h1>
                         
                     </div>
                     <div className={active === 'Contact' ? styles.activeNav: styles.notActiveNav}>

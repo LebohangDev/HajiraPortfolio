@@ -134,7 +134,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     
     .navSection{
@@ -337,3 +337,46 @@
     }
 
 }
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .navSection{
+    
+    grid-template-columns: repeat(3, 3fr);
+
+   
+    width: 90%;
+    height: 100%;
+    gap: 2rem;
+
+    margin: 0 auto;
+}
+
+
+.navSection .navContainer{
+    display: grid ;
+    grid-template-columns: repeat(3, 3fr);
+   
+   
+
+    margin: 0 auto;
+}
+
+
+.navContainer .navigation{
+    
+    gap: 2rem;
+    
+    
+}
+
+    
+
+
+
+}
+
+
+

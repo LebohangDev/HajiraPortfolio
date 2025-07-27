@@ -1013,7 +1013,7 @@
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     .homeContainer{
 
@@ -1222,6 +1222,7 @@
 .homeContainer .socialsSection .socialsContainer .socialCard  .content1 .imgHolder img{
     width: 25rem;
     height: 25rem;
+    object-fit: cover;
 
 
 
@@ -1407,6 +1408,391 @@
 
 
 
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+     .homeContainer{
+
+    grid-template-rows: auto auto auto;
+    height: 100%;
+    
+    
+
+   
+    
+   
+    
+}
+
+.homeContainer .heroSection{
+
+   
+
+   grid-template-columns: minmax(0, 100%);
+   margin: 0 auto;
+   width: 100%;
+   
+   position: relative;
+   padding: 0;
+  
+   
+    
+
+  
+    
+    
+    
+}
+
+    
+.homeContainer .socialsSection .socialsContainer {
+    grid-template-columns: minmax(0, 100%);
+    padding: 0;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 10%;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    z-index: 10000;
+    
+
+    
+
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard{
+    height: 50rem;
+    width: 30rem;
+    
+     
+
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content1 .imgHolder img{
+    width: 30rem;
+    height: 29rem;
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content1 .header h1{
+    font-size: 2.5rem ;
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content1 .header img{
+    width: 1.8rem;
+    height: 1.8rem;
+
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content1 .description{
+    width: 30rem;
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content1 .description p{
+    font-size: 1.3rem ;
+}
+
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content2 .socialNumbers p{
+    font-size: 1.4rem;
+
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content2 .socialNumbers .followers i{
+    font-size: 2rem;
+
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content2 .socialNumbers .postCount i{
+    font-size: 2rem;
+
+}
+
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content2 .followButton{
+    width: fit-content;
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content2 .followButton button{
+    font-size: 1.4rem;
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content2 .followButton i{
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.homeContainer .collaborationsSection{
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 2rem;
+
+}
+
+.homeContainer .collaborationsSection .collaborationsContainer{
+    grid-template-columns: minmax(0, 100%);
+    width: 90%;
+    margin:0 auto;
+    padding: 0;
+    gap: 5rem;
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents{
+    grid-template-columns: minmax(0, 100%);
+    grid-template-rows: repeat(1, 1fr);
+    width: 100%;
+    
+
+
+    margin:0 auto;
+    padding: 0;
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1{
+    grid-template-rows: 24rem 22rem 10rem auto;
+    gap: 2rem;
+    grid-row: 1;
+    right: 0;
+    top: 0;
+    justify-items: center;
+
+
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .collabStats{
+    left: 0;
+    gap: 15rem;
+    height: 10rem;
+    top: 40%;
+    
+
+}
+
+
+
+
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .contactButton{
+    left: 0;
+    grid-row: 3;
+
+}
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .contactButton button{
+
+    padding: 1.4rem;
+    font-size: 1.2rem;
+}
+
+
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .contactButton p{
+    font-size: 1.5rem;
+    width: 20rem;
+}
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .collabStats .stat1 h1, .stat2 h1{
+
+    
+    font-size: 4rem;
+    white-space: nowrap;
+    
+}
+
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .collabStats .stat1 p, .stat2 p{
+    font-size: 1.6rem;
+    line-height: 20px;
+
+}
+
+
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .collabStats  .stat2 p{
+    width: 10rem;
+    line-height: 20px;
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .collaborationsHeader{
+    bottom: 80%;
+}
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .collaborationsHeader h1{
+    font-size: 7rem;
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content2{
+    grid-row: 2;
+    grid-column: 1;
+    left: 0%;
+    grid-row: 1;
+    text-align: left;
+    align-items: center;
+    padding-top: 14%;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  
+    
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .title{
+    width: 90%;
+
+}
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .description{
+    width: 90%;
+    
+
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .title p{
+    font-size: 2.4rem;
+    
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .description p{
+    font-size: 1.7rem;
+    
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .adCompanies{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: auto;
+   justify-items: center;
+   margin: 0 auto;
+   width: 90%;
+   height: 100%;
+   gap: 5rem;
+
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .adCompanies img{
+    height: 40px;
+    
+}
+
+
+
+
+.homeContainer .previewSection{
+   
+ 
+    width: 60rem;
+}
+
+
+
+
+}
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+    
+        
+.homeContainer .socialsSection .socialsContainer .socialCard .socialsHeader{
+    left: 50%;
+    top: -2%;
+    transform: rotate(40deg);
+
+}
+    
+.homeContainer .socialsSection .socialsContainer .socialCard .socialsHeader h1{
+        font-size: 2.3rem;
+    }
+
+
+}
+
+
+
+.homeContainer .collaborationsSection .collaborationsContainer{
+    padding-top: 4%;
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents{
+    gap: 14rem;
+}
+
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1{
+    right: 0;
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content2{
+    left: 0;
 }
 
 
