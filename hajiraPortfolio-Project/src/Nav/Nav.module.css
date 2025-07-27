@@ -159,7 +159,7 @@
     .hamburgerSection .hamburgerContainer{
         display: grid;
         grid-template-columns: repeat(1, 2fr);
-        grid-template-rows: 1fr;
+        grid-template-rows: 10rem;
         margin: 0 auto;
         
         width: 35rem;
@@ -175,7 +175,7 @@
 
     .hamburgerSection .hamburgerContainer .userTitle h1{
         
-        font-size: 9rem;
+        font-size: 8rem;
         color: #FF77CD;
         margin: 0;
         font-family: "Inspiration", cursive;

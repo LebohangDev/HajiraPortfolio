@@ -26,8 +26,8 @@
 #root{
   background-color: white;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 7rem 1fr 48vh;
+  grid-template-columns: minmax(0, 100%);
+  grid-template-rows: 7rem 1fr auto;
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -63,6 +63,7 @@ body {
   overflow: hidden;
   z-index: 1000;
   position: relative;
+  height: 100%;
 
 }
 

@@ -126,6 +126,10 @@ function Home(){
 
                     </div>
 
+                    <div className={styles.mobileSakuraTree}>
+                        <img src="Images/mobile_Sakura_Tree.png" alt="" />
+                    </div>
+
                 </div>
                 
 

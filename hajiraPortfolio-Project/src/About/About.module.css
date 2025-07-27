@@ -412,7 +412,7 @@
         grid-area: 1/1;
         grid-template-columns: 1fr;
         grid-template-rows: 4rem auto;
-        width: 90%;
+        width: 100%;
         
       
     }
@@ -489,6 +489,94 @@
         
 
     }
+
+    
+
+.aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(1){
+    width: 2.4rem;
+    height: 2.4rem;
+    left: 5rem;
+    bottom: 24rem;
+    transform: rotate(30deg);
+
+
+
+}
+
+
+.aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(2){
+     width: 2.4rem;
+    height: 2.4rem;
+   
+    bottom: 30rem;
+    left: 30rem;
+    transform: rotate(-10deg);
+}
+
+
+
+.aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(3){
+    width: 2.4rem;
+    height: 2.4rem;
+   
+    bottom: 22rem;
+    left: 14rem;
+    transform: rotate(20deg);
+   
+
+}
+.aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(4){
+    width: 2.4rem;
+    height: 2.4rem;
+   
+    bottom: 14rem;
+    left: 4rem;
+    transform: rotate(-20deg);
+}
+
+
+.aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(5){
+    width: 2.4rem;
+    height: 2.4rem;
+    
+    bottom: 22rem;
+    left: 29rem;
+    transform: rotate(-10deg);
+    
+    
+}
+
+
+.aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(6){
+    width: 2.4rem;
+    height: 2.4rem;
+    
+    bottom: 5rem;
+    left: 4rem;
+    transform: rotate(-10deg);
+    
+}
+
+
+.aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(7){
+    width: 2.4rem;
+    height: 2.4rem;
+    bottom: 30rem;
+    left: 14rem;
+    transform: rotate(-20deg);
+}
+
+
+.aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(8){
+    width: 2.4rem;
+    height: 2.4rem;
+    bottom: 12rem;
+    left: 11rem;
+    transform: rotate(-20deg);
+    
+    
+
+}
 
     
 

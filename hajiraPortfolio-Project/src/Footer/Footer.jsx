@@ -35,29 +35,34 @@ function Footer({setActive, active}){
                 </div>
 
                 
-                <div className={styles.footerLine}>
-                    <hr />
-
-                </div>
+                
 
                 <div className={styles.footerBottom}>
-                    <div className={styles.footerCopyright}>
-                        <p>Copyright 2025</p>
-                        <i class="ri-copyright-line"></i>
+                    <div className={styles.footerLine}>
+                        <hr />
 
                     </div>
-                    <div className={styles.dev}>
-                        <p>Developed By LDEV</p>
+                    <div className={styles.footerBottomContainer}>
+                        <div className={styles.footerCopyright}>
+                            <p>Copyright 2025</p>
+                            <i class="ri-copyright-line"></i>
+
+                        </div>
+                        <div className={styles.dev}>
+                            <p>Developed By LDEV</p>
+                        </div>
+
+                        <div className={styles.Socials}>
+                            <img src="Images/socialIcons/whatsapp-Icon.png" alt="whatsapp" />
+                            <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
+                            <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
+                            <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
+                            <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />                    
+
+                        </div>
+
                     </div>
 
-                    <div className={styles.Socials}>
-                        <img src="Images/socialIcons/whatsapp-Icon.png" alt="whatsapp" />
-                        <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
-                        <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
-                        <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
-                        <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />                    
-
-                    </div>
 
                     
                 
