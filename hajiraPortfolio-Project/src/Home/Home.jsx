@@ -95,14 +95,18 @@ function Home(){
 
                     <div className={styles.section2}>
                         <div className={styles.userImg}>
-                            <img src="Images/Hajira/hajiraHome.png" alt="" />
-                           
-                        
-                        </div>
-                        <div className={styles.blob}>
+                            <div className={styles.user}>
+                                <img src="Images/Hajira/hajiraHome.png" alt="" />
+
+                            </div>
+                            
+                            <div className={styles.blob}>
                                 <img src="Images/Hajira/background-Blob.png" alt="" />  
 
+                            </div>
+                        
                         </div>
+                       
                    
                    
                     
@@ -128,7 +132,12 @@ function Home(){
             </div>
             <div className={styles.socialsSection}>
                 
+                
                 <div className={styles.socialsContainer}>
+
+                 
+
+                    
                    
 
                    
@@ -143,10 +152,16 @@ function Home(){
                         className={styles.socialCard}
                         >
                         
-                        <div className={styles.socialCard} key={index}>
-                           {index === 2 && <div className={styles.socialsHeader}>
+                        <div key={index}>
+                           {index === 2 && 
+                           <div className={styles.socialsHeader}>
                                 <h1>#TEAMHAJRA</h1>
-                        </div>}
+                            </div>}
+
+                        
+
+                        
+
                                 
                             <div className={styles.content1}>
                                 <div className={styles.imgHolder}>
@@ -189,6 +204,8 @@ function Home(){
                         </motion.div>
 
                     ))}
+
+                    
 
 
                 </div>

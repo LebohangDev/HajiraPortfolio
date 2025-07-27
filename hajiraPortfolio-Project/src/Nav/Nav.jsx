@@ -63,13 +63,13 @@ function Nav({setActive, active}){
                     </div>
                     <div className={active === 'Home' ? styles.activeNav : styles.notActiveNav}>
                         <i className="ri-home-heart-fill"></i>
-                        <h1 onClick={ (e) => {e.preventDefault(); setActive('Home')}}>Home</h1>
+                        <h1 onClick={ (e) => {e.preventDefault(); setActive('Home'); setHamburger('false')}}>Home</h1>
                         
                         
                     </div>
                     <div className={active === 'About' ? styles.activeNav : styles.notActiveNav}>
                         <i class="ri-user-heart-line"></i>
-                        <h1 onClick={ (e) => {e.preventDefault(); setActive('About')}}>About</h1>
+                        <h1 onClick={ (e) => {e.preventDefault(); setActive('About'); setHamburger('false')}}>About</h1>
                         
                     </div>
                     <div className={active === 'Contact' ? styles.activeNav: styles.notActiveNav}>

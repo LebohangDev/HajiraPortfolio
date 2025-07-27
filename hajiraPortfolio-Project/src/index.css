@@ -92,6 +92,22 @@ body {
 }
 
 
+#root{
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem 1fr 48vh;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  position: relative;
+}
+
+
 
 }
 
