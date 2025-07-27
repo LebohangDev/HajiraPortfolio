@@ -61,7 +61,7 @@
     height: 100%;
     width: 100%;
 
-    grid-template-rows: 45rem 30rem 40rem 1fr ;
+    grid-template-rows:  auto 30rem 40rem 1fr ;
     overflow: hidden;
    
     
@@ -433,7 +433,7 @@
 .homeContainer .socialsSection .socialsContainer .socialCard .socialsHeader{
     position: absolute;
     left: 40%;
-    top: -9%;
+    top: -5%;
     transform: rotate(30deg);
     
     
@@ -721,7 +721,7 @@
     position: absolute;
     transform: rotate(-6deg);
     width: fit-content;
-    bottom: 80%;
+    bottom: 100%;
     z-index: 100;
 }
 
@@ -750,7 +750,7 @@
 .homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .collabStats{
     position: relative;
     z-index: 1000;
-    
+    bottom: 40%;
     display: flex;
     flex-direction: row;
     gap: 25%; 
@@ -1017,7 +1017,7 @@
 
     .homeContainer{
 
-    grid-template-rows: 55rem auto auto;
+    grid-template-rows: auto auto auto;
     height: 100%;
     
     
@@ -1322,6 +1322,11 @@
 .homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .collabStats  .stat2 p{
     width: 7rem;
     top: 5%;
+}
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .collaborationsHeader{
+    bottom: 80%;
 }
 
 .homeContainer .collaborationsSection .collaborationsContainer .contents .content1 .collaborationsHeader h1{

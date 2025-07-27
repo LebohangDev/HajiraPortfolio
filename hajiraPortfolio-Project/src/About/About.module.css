@@ -67,14 +67,14 @@
 
 .aboutContainer{
     display: grid;
-    grid-template-columns: repeat(1, 2fr);
+    grid-template-columns: 30rem auto;
     grid-template-rows: auto;
     margin: 0 auto;
     justify-items: center;
     
     height: 100%;
     position: relative;
-    gap: 10%;
+    gap: 20%;
     
    
     
@@ -87,7 +87,38 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4rem auto;
+    grid-template-rows: 6rem auto;
+}
+
+
+.aboutContainer .scrollMore{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    opacity: 0 ;
+    animation: fadeIn 0.8s forwards;
+    animation-delay: 2s;
+
+}
+
+.aboutContainer .scrollMore p{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #D5D5D5 ;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.aboutContainer .scrollMore i{
+    color: #B4B4B4 ;
+
 }
 
 
@@ -136,6 +167,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    padding-left: 20%;
    
     
 
@@ -144,8 +176,11 @@
 
 .aboutContainer .section1 .userIMGContainer .user img{
    
-    width: 42rem;
-    height: 42rem;
+    
+    height: 40rem;
+    
+    
+    
     object-fit: cover;
     position: relative;
     z-index: 1000;
@@ -181,9 +216,10 @@
 .aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(2){
     width: 2.2rem;
     height: 2.2rem;
+
     position: absolute;
     bottom: 5rem;
-    left: 5.5rem;
+    left: -5rem;
     transform: rotate(30deg);
     animation-delay: 0.1s;
 }
@@ -196,7 +232,7 @@
     object-fit: cover;
     position: absolute;
     bottom: 16rem;
-    left: 5rem;
+    left: -5rem;
     transform: rotate(30deg);
     animation-delay: 0.2s;
 }
@@ -221,7 +257,7 @@
     object-fit: cover;
     position: absolute;
     bottom: 10rem;
-    left: -5rem;
+    left: 0rem;
     animation-delay: 0.4s;
     
 }
@@ -233,7 +269,7 @@
     object-fit: cover;
     position: absolute;
     bottom: 20rem;
-    left: -3rem;
+    left: 30rem;
     transform: rotate(-30deg);
     animation-delay: 0.5s;
 }
@@ -244,8 +280,8 @@
     height: 2.2rem;
     object-fit: cover;
     position: absolute;
-    bottom: 27rem;
-    left: -3rem;
+    bottom: 25rem;
+    left: -1rem;
     transform: rotate(-30deg);
     animation-delay: 0.6s;
     
@@ -258,7 +294,7 @@
     object-fit: cover;
     position: absolute;
     bottom: 9rem;
-    left: 26rem;
+    left: 27rem;
     transform: rotate(5deg);
     animation-delay: 0.7s;
     
@@ -418,6 +454,21 @@
     }
 
     
+    .aboutContainer .scrollMore{
+        position: absolute;
+        top: -17%;
+        left: 0%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+        opacity: 0 ;
+        animation: fadeIn 0.8s forwards;
+        animation-delay: 2s;
+
+}
+
+    
     .aboutSection .aboutContainer .section1 .title {
         bottom: 0;
         grid-row: 1;
@@ -439,9 +490,9 @@
 
     
     .aboutSection .aboutContainer .section1 .userIMGContainer .user img{
-        width: 40rem;
-        height: 40rem;
-        padding-left: 4rem;
+        
+        height: 35rem;
+        padding-left: 8rem;
 
     }
 
@@ -496,7 +547,7 @@
     width: 2.4rem;
     height: 2.4rem;
     left: 5rem;
-    bottom: 24rem;
+    bottom: 20rem;
     transform: rotate(30deg);
 
 
@@ -519,8 +570,8 @@
     width: 2.4rem;
     height: 2.4rem;
    
-    bottom: 22rem;
-    left: 14rem;
+    bottom: 20rem;
+    left: 17rem;
     transform: rotate(20deg);
    
 
@@ -529,7 +580,7 @@
     width: 2.4rem;
     height: 2.4rem;
    
-    bottom: 14rem;
+    bottom: 10rem;
     left: 4rem;
     transform: rotate(-20deg);
 }
@@ -539,9 +590,9 @@
     width: 2.4rem;
     height: 2.4rem;
     
-    bottom: 22rem;
-    left: 29rem;
-    transform: rotate(-10deg);
+    bottom: 23rem;
+    left: 31rem;
+    transform: rotate(10deg);
     
     
 }
@@ -551,8 +602,8 @@
     width: 2.4rem;
     height: 2.4rem;
     
-    bottom: 5rem;
-    left: 4rem;
+    bottom: 2rem;
+    left: 7rem;
     transform: rotate(-10deg);
     
 }
@@ -561,9 +612,9 @@
 .aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(7){
     width: 2.4rem;
     height: 2.4rem;
-    bottom: 30rem;
+    bottom: 25rem;
     left: 14rem;
-    transform: rotate(-20deg);
+    transform: rotate(-15deg);
 }
 
 

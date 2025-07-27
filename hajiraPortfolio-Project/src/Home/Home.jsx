@@ -42,11 +42,6 @@ function Home(){
         { img: 'Images/ImagePreview/img7.jpg' },
         { img: 'Images/ImagePreview/img8.jpg' },
         { img: 'Images/ImagePreview/img9.jpg' },
-        { img: 'Images/ImagePreview/img10.jpg' },
-        { img: 'Images/ImagePreview/img11.jpg' },
-        { img: 'Images/ImagePreview/img12.jpg' },
-        { img: 'Images/ImagePreview/img13.jpg' },
-        { img: 'Images/ImagePreview/img14.jpg' },
     ];
 
      let companyIMAGES = [
@@ -68,72 +63,6 @@ function Home(){
         <>
         
         <div className={styles.homeContainer}>
-            <div className={styles.heroSection}>
-                <div className={styles.heroContainer}>
-                    <div className={styles.sakura_Tree}>
-                        <img src="Images/sakura_Tree.png" alt="" />
-                    </div>
-               
-                    <div className={styles.section1}>
-                        <div className={styles.title}>
-                            <h1><span>C</span>ontent</h1>
-                            <h1><span>C</span>reator</h1>
-
-                        </div>
-                    
-                        <div className={styles.seeMoreButton}>
-                            <i className="ri-arrow-right-double-fill"></i>
-                            <button><span>SEE MORE</span></button>
-                        
-                        
-
-                        </div>
-                   
-                    
-                    
-                    </div>
-
-                    <div className={styles.section2}>
-                        <div className={styles.userImg}>
-                            <div className={styles.user}>
-                                <img src="Images/Hajira/hajiraHome.png" alt="" />
-
-                            </div>
-                            
-                            <div className={styles.blob}>
-                                <img src="Images/Hajira/background-Blob.png" alt="" />  
-
-                            </div>
-                        
-                        </div>
-                       
-                   
-                   
-                    
-
-                    </div>
-                    <div className={styles.section3}>
-                        <div className={styles.userQuote}>
-                            <p>"“Content is <span>connection</span> made visual” – and here, every frame tells a <span>story</span>. Welcome to a portfolio where <span>creativity</span> meets <span>purpose</span>."</p>
-
-                        </div>
-                        <div className={styles.dots}>
-                            <img src="Images/dots/dot1.png" alt="" />
-                            <img src="Images/dots/dot2.png" alt="" />
-                            <img src="Images/dots/dot3.png" alt="" />
-                        </div>
-        
-
-                    </div>
-
-                    <div className={styles.mobileSakuraTree}>
-                        <img src="Images/mobile_Sakura_Tree.png" alt="" />
-                    </div>
-
-                </div>
-                
-
-            </div>
             <div className={styles.socialsSection}>
                 
                 

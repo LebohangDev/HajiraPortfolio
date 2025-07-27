@@ -30,7 +30,10 @@ function About(){
                         </div>
 
                     </div>
+
+                    
                 </div>
+                
                 <div className={styles.section2}>
                     <div className={styles.descriptionContainer}>
                         <p>I’m a content creator fueled by creativity, 
@@ -67,7 +70,12 @@ function About(){
                         </div>
                     </div>
                 </div>
+                <div className={styles.scrollMore}>
+                <p>Scroll for More</p>
+                <i class="ri-arrow-down-line"></i>
             </div>
+            </div>
+            
             
         </div>
         

@@ -29,6 +29,7 @@ function App() {
 
     <div className="Content">
       <div className={active === 'Home' ? 'activeSection' : 'notActive'}>
+        <About/>
         <Home active={active}/>
         
 
@@ -36,7 +37,7 @@ function App() {
 
 
       <div className={active === 'About' ? 'activeSection' : 'notActive'}>
-        <About/>
+       
         
 
       </div>

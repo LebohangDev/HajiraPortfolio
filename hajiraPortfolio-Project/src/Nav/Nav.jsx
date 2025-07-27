@@ -15,8 +15,8 @@ function Nav({setActive, active}){
                         <hr className={active === 'Home' ? styles.activeNavUnderline : styles.notActiveUnderline}/>
                     </div>
                     <div className={active === 'About' ? styles.activeNav : styles.notActiveNav}>
-                        <h1 onClick={ (e) => {e.preventDefault(); setActive('About')}}>About</h1>
-                        <hr className={active === 'About' ? styles.activeNavUnderline : styles.notActiveUnderline}/>
+                        <h1 onClick={ (e) => {e.preventDefault();}}>Product</h1>
+                        
                     </div>
                     <div className={active === 'Contact' ? styles.activeNav: styles.notActiveNav}>
                         <h1>Contact</h1>
@@ -68,8 +68,8 @@ function Nav({setActive, active}){
                         
                     </div>
                     <div className={active === 'About' ? styles.activeNav : styles.notActiveNav}>
-                        <i class="ri-user-heart-line"></i>
-                        <h1 onClick={ (e) => {e.preventDefault(); setActive('About'); setHamburger('false')}}>About</h1>
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <h1 onClick={ (e) => {e.preventDefault(); setHamburger('false')}}>Product</h1>
                         
                     </div>
                     <div className={active === 'Contact' ? styles.activeNav: styles.notActiveNav}>
