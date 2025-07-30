@@ -9,6 +9,7 @@
    
    width: 100%;
    height: 100%;
+  
    gap: 6rem;
 
     margin: 0 auto;
@@ -17,14 +18,17 @@
 
 .navSection .navContainer{
     display: grid ;
-    grid-template-columns: repeat(3, 3fr);
+    grid-template-columns: 30rem auto auto;
     grid-template-rows: auto;
     align-items:center;
     justify-items: center;
    position: fixed;
    background-color: white;
    z-index: 10000;
-   width: 100vw;
+   width: 90%;
+   padding-top: 2%;
+    border: none;
+   border-radius: 25px;
    height: 7rem;
    
 
@@ -59,6 +63,12 @@
     color: #e8b7fc;
 }
 
+
+.navContainer .navigation h1 a:hover{
+    cursor: pointer;
+    color: #e8b7fc;
+}
+
 .navContainer .navigation .activeNav{
     color: #E6A6FF ;
 }
@@ -78,6 +88,11 @@
 
 .navContainer .navigation .notActiveNav{
     color: #D0CFCF ;
+}
+
+.navContainer .navigation .notActiveNav a{
+    color: #D0CFCF ;
+    text-decoration: none;
 }
 
 
@@ -118,6 +133,11 @@
 }
 
 
+.navContainer .socialIcons img:hover{
+    cursor: pointer;
+}
+
+
 .hamburgerSection{
         display: none;
     }
@@ -130,6 +150,32 @@
     display: none;
 }
 
+
+
+
+
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
 
 
@@ -153,6 +199,7 @@
         position: fixed;
         background-color: white;
         top: 0%;
+        
     
     }
 
@@ -197,6 +244,7 @@
         height: 100vh;
         width: 100%;
         position: fixed;
+         animation: fadeInLeft 0.3s forwards;
         top: 0%;
         display: grid;
         grid-template-columns: 1fr;
@@ -253,6 +301,8 @@
      }
 
      
+
+     
      .hamburgerMenuActive .menuContainer .menuNavigation .activeNav{
         display: flex;
         flex-direction: row;
@@ -277,6 +327,8 @@
         letter-spacing: 4px;
         font-size: 2.1rem;
      }
+
+    
      .hamburgerMenuActive .menuContainer .menuNavigation .notActiveNav{
         display: flex;
         flex-direction: row;
@@ -302,6 +354,15 @@
         font-size: 2.1rem;
      }
 
+     .hamburgerMenuActive .menuContainer .menuNavigation .notActiveNav h1 a{
+        color: #C4C4C4 ;
+        font-family: "Istok Web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 4px;
+        text-decoration: none;
+     }
+
 
      
      .hamburgerMenuActive .menuContainer .menuSocials{
@@ -315,6 +376,11 @@
      .hamburgerMenuActive .menuContainer .menuSocials img{
         width: 20px;
         height: 20px;
+     }
+
+     
+     .hamburgerMenuActive .menuContainer .menuSocials img:hover{
+        cursor: pointer;
      }
 
      
@@ -340,14 +406,16 @@
 
 
 
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .navSection{
     
     grid-template-columns: repeat(3, 3fr);
+   
 
    
-    width: 90%;
+    width: 100%;
     height: 100%;
     gap: 2rem;
 
@@ -377,6 +445,9 @@
 
 
 }
+
+
+
 
 
 

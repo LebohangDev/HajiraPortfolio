@@ -27,11 +27,9 @@ function Footer({setActive, active}){
 
                 </div>
                 <div className={styles.footerSocials}>
-                    <img src="Images/socialIcons/whatsapp-Icon.png" alt="whatsapp" />
-                    <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
-                    <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
-                    <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
-                    <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />                    
+                    <img onClick={(e) =>{e.preventDefault(); window.location.href = 'https://www.instagram.com/hajirakhaaan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='; }} src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
+                    <img onClick={(e) =>{e.preventDefault(); window.location.href = 'https://www.tiktok.com/@hajirakhaaan?is_from_webapp=1&sender_device=pc'; }} src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
+                    <img onClick={(e) =>{e.preventDefault(); window.location.href = 'mailto:workwithhajira@gmail.com'; }} src="Images/socialIcons/gmail-Icon.png" alt="tiktok" />             
                 </div>
 
                 
@@ -53,11 +51,10 @@ function Footer({setActive, active}){
                         </div>
 
                         <div className={styles.Socials}>
-                            <img src="Images/socialIcons/whatsapp-Icon.png" alt="whatsapp" />
-                            <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
-                            <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
-                            <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
-                            <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />                    
+                          
+                            <img onClick={(e) =>{e.preventDefault(); window.location.href = 'https://www.instagram.com/hajirakhaaan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='; }} src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
+                            <img onClick={(e) =>{e.preventDefault(); window.location.href = 'https://www.tiktok.com/@hajirakhaaan?is_from_webapp=1&sender_device=pc'; }} src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
+                            <img onClick={(e) =>{e.preventDefault(); window.location.href = 'mailto:workwithhajira@gmail.com'; }} src="Images/socialIcons/gmail-Icon.png" alt="tiktok" />              
 
                         </div>
 

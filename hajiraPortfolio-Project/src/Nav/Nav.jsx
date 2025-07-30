@@ -18,20 +18,26 @@ function Nav({setActive, active}){
                         <h1 onClick={ (e) => {e.preventDefault();}}>Product</h1>
                         
                     </div>
-                    <div className={active === 'Contact' ? styles.activeNav: styles.notActiveNav}>
-                        <h1>Contact</h1>
-                        <hr className={active === 'Contact' ? styles.activeNavUnderline : styles.notActiveUnderline}/>
+                     <div className={active === 'Potfolio' ? styles.activeNav: styles.notActiveNav}>
+                        <h1><a href="public/portfolio-Hajira-compressed.pdf" download>Portfolio</a></h1>
+                        
+
+                       
                     </div>
+                    <div className={active === 'Contact' ? styles.activeNav: styles.notActiveNav}>
+                        <h1 onClick={(e) =>{e.preventDefault(); window.location.href = 'mailto:workwithhajira@gmail.com'; }} >Contact</h1>
+                        
+                    </div>
+                   
                 </div>
                 <div className={styles.userTitle}>
                     <h1>Hajira</h1>
                 </div>
                 <div className={styles.socialIcons}>
-                    <img src="Images/socialIcons/whatsapp-Icon.png" alt="whatsapp" />
-                    <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
-                    <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
-                    <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
-                    <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
+                    
+                    <img onClick={(e) =>{e.preventDefault(); window.location.href = 'https://www.instagram.com/hajirakhaaan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='; }} src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
+                    <img onClick={(e) =>{e.preventDefault(); window.location.href = 'https://www.tiktok.com/@hajirakhaaan?is_from_webapp=1&sender_device=pc'; }} src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
+                    <img onClick={(e) =>{e.preventDefault(); window.location.href = 'mailto:workwithhajira@gmail.com'; }} src="Images/socialIcons/gmail-Icon.png" alt="mail" />
               
                 </div>
 
@@ -52,9 +58,13 @@ function Nav({setActive, active}){
 
                 </div>
         </div>
+
+       
+        
         <div className={hamburger === true ? styles.hamburgerMenuActive : styles.hamburgerMenuNotActive  }>
             <div className={styles.menuContainer}>
                 <div className={styles.header}>
+                    
                     <i class="ri-arrow-left-s-line" onClick= {((e) =>{ e.preventDefault();setHamburger(false)})}></i>
                 </div>
                 <div className={styles.menuNavigation}>
@@ -68,25 +78,33 @@ function Nav({setActive, active}){
                         
                     </div>
                     <div className={active === 'About' ? styles.activeNav : styles.notActiveNav}>
-                        <i class="ri-shopping-cart-2-line"></i>
+                        <i className="ri-shopping-cart-2-line"></i>
                         <h1 onClick={ (e) => {e.preventDefault(); setHamburger('false')}}>Product</h1>
                         
                     </div>
-                    <div className={active === 'Contact' ? styles.activeNav: styles.notActiveNav}>
-                        <i class="ri-mail-ai-fill"></i>
-                        <h1>Contact</h1>
+                    <div className={active === 'Potfolio' ? styles.activeNav: styles.notActiveNav}>
+                        <i className="ri-file-2-fill"></i>
+                        <h1><a href="public/portfolio-Hajira-compressed.pdf" download>Portfolio</a>
+                            
+                         </h1>
                         
 
                        
                     </div>
+                    <div className={active === 'Contact' ? styles.activeNav: styles.notActiveNav}>
+                        <i className="ri-mail-ai-fill"></i>
+                        <h1 onClick={(e) =>{e.preventDefault(); window.location.href = 'mailto:workwithhajira@gmail.com'; }}>Contact</h1>
+                        
+
+                       
+                    </div>
+
+                    
                 </div>
                 <div className={styles.menuSocials}> 
-                    <img src="Images/socialIcons/whatsapp-Icon.png" alt="whatsapp" />
-                    <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
-                    <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
-                    <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
-                    <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
-
+                    <img onClick={(e) =>{e.preventDefault(); window.location.href = 'https://www.instagram.com/hajirakhaaan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='; }} src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
+                    <img onClick={(e) =>{e.preventDefault(); window.location.href = 'https://www.tiktok.com/@hajirakhaaan?is_from_webapp=1&sender_device=pc'; }} src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
+                    <img onClick={(e) =>{e.preventDefault(); window.location.href = 'mailto:workwithhajira@gmail.com'; }} src="Images/socialIcons/gmail-Icon.png" alt="tiktok" />
                 </div>
                 <div className={styles.menuBottom}>
                     <h1>#TEAMHAJIRA</h1>

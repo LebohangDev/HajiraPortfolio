@@ -10,27 +10,22 @@ function Home(){
         {
             social: 'Instagram',
             description: 'Fashion | Lifestyle | Creator Just a girl who drives with elite music taste',
-            followers: 2450,
+            followers: '138K',
             img:'Images/SocialImages/haju1.jpg',
             icon:'Images/socialIcons/instagram-Icon.png',
-            posts: 132
+            link: 'https://www.instagram.com/hajirakhaaan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+            posts: 61
         },
         {
             social: 'TikTok',
             description: 'Fast-paced, trend-savvy videos built for engagement',
-            followers: 7600,
+            followers: '136K',
             img:'Images/SocialImages/haju2.jpg',
             icon:'Images/socialIcons/tiktok-Icon.png',
-            posts: 89
+            link: 'https://www.tiktok.com/@hajirakhaaan?is_from_webapp=1&sender_device=pc',
+            posts: 155
         },
-        {
-            social: 'YouTube',
-            description: 'A collection of long-form content, vlogs, and curated Shorts that blend storytelling with creativity',
-            followers: 1800,
-            img:'Images/SocialImages/haju3.jpg',
-            icon:'Images/socialIcons/youtube-Icon.png',
-            posts: 42
-        }
+       
     ];
     let masonryIMAGES = [
         { img: 'Images/ImagePreview/img1.jpg' },
@@ -86,9 +81,9 @@ function Home(){
                         >
                         
                         <div key={index}>
-                           {index === 2 && 
+                           {index === 1 && 
                            <div className={styles.socialsHeader}>
-                                <h1>#TEAMHAJRA</h1>
+                                <h1>#TEAMHAJIRA</h1>
                             </div>}
 
                         
@@ -123,9 +118,9 @@ function Home(){
                                     </div>
 
                                 </div>
-                                <div className={styles.followButton}>
+                                <div className={styles.followButton} onClick={(e) =>{e.preventDefault(); window.location.href = S.link}}>
                                     
-                                    <button>Follow Me</button>
+                                    <button >Follow Me</button>
                                     <i class="ri-add-fill"></i>
                                 </div>
                             </div>
@@ -177,26 +172,20 @@ function Home(){
                                 </div>
                             </div>
                             <div className={styles.contactButton}>
-                                <button>CONTACT</button>
+                                <button onClick={(e) =>{e.preventDefault(); window.location.href = 'mailto:workwithhajira@gmail.com'; }}>CONTACT</button>
                                 <p>Lets Work Together!</p>
 
                             </div>
 
                         </div>
                         <div className={styles.content2}>
+                        
                             <div className={styles.title}>
-                                <p>Over time, I’ve had the privilege of
-                                   collaborating with a variety of brands,
-                                   ranging from local businesses to well-known
-                                   companies
-                                </p>
+                               <p>I’ve had the chance to work with brands of all sizes, from local businesses to major names.</p>
+
                             </div>
                             <div className={styles.description}>
-                                <p>I worked to create custom ad content tailored for
-                                   advertisements for Companies such as Dunkin Donuts, DU, and EDNOC . Each collaboration
-                                   reflects not only my creativity and storytelling but also real results in
-                                   reach, engagement, and influence
-                                </p>
+                               <p>I’ve created custom ad content for companies like Dunkin Donuts, DU, and ADNOC, blending creativity with real results in reach, engagement, and impact.</p>
 
                             </div>
 

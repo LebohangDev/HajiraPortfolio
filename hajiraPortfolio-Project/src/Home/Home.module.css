@@ -61,7 +61,7 @@
     height: 100%;
     width: 100%;
 
-    grid-template-rows:  auto 30rem 40rem 1fr ;
+    grid-template-rows:  auto 31rem 40rem 1fr ;
     overflow: hidden;
    
     
@@ -393,7 +393,7 @@
 
 .homeContainer .socialsSection .socialsContainer{
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
     width: fit-content;
     height: 40%;
@@ -402,7 +402,7 @@
     padding-right: 4rem;
     justify-items: center;
     position: relative;
-    gap: 2rem;
+    gap: 7rem;
    
 }
 
@@ -537,7 +537,7 @@
     align-items: center;
     padding-left: 1rem;
     gap: 6rem;
-     padding-top: 10%;
+     padding-top: 16%;
     
 
 }
@@ -640,6 +640,11 @@
 
 
 .homeContainer .socialsSection .socialsContainer .socialCard .content2 .followButton button:hover{
+    cursor: pointer;
+}
+
+
+.homeContainer .socialsSection .socialsContainer .socialCard .content2 .followButton:hover{
     cursor: pointer;
 }
 
@@ -897,7 +902,7 @@
 
 
 .homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .title{
-    width: 38rem;
+    width: fit-content;
     
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -918,7 +923,7 @@
 
 
 .homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .description{
-    width: 38rem;
+    width: fit-content;
 }
 
 
@@ -1211,7 +1216,7 @@
 
 
 .homeContainer .socialsSection .socialsContainer .socialCard{
-    height: 40rem;
+    height: 43rem;
     
      
 
@@ -1354,12 +1359,12 @@
 
 
 .homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .title{
-    width: 90%;
+    width: 100%;
 
 }
 
 .homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .description{
-    width: 90%;
+    width: 100%;
     
 
 }
@@ -1367,6 +1372,7 @@
 
 .homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .title p{
     font-size: 1.3rem;
+    width: 34rem;
     
 }
 
@@ -1537,6 +1543,8 @@
 .homeContainer .socialsSection .socialsContainer .socialCard .content2 .followButton i{
     font-size: 1.4rem;
 }
+
+
 
 
 
@@ -1797,7 +1805,22 @@
 
 
 
+@media (min-width: 1281px) {
 
+    
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .title{
+    width: 40rem;
+    
+}
+
+
+
+.homeContainer .collaborationsSection .collaborationsContainer .contents .content2 .description{
+    width: 40rem;
+}
+
+
+}
 
 
 

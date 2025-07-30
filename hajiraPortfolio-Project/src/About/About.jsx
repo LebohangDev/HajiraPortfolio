@@ -19,12 +19,11 @@ function About(){
                         
 
                         <div className={styles.socialIcons}>
-                            <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
-                            <img src="Images/socialIcons/youtube-Icon.png" alt="youtube" />
+                            <img src="Images/socialIcons/gmail-Icon.png" alt="tiktok" />
+                            <img src="Images/socialIcons/gmail-Icon.png" alt="tiktok" />
                             <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
                             <img src="Images/socialIcons/instagram-Icon.png" alt="instagram" />
-                            <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
-                            <img src="Images/socialIcons/linkedin-Icon.png" alt="linkedin" />
+                            <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
                             <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
                             <img src="Images/socialIcons/tiktok-Icon.png" alt="tiktok" />
                         </div>
@@ -36,19 +35,9 @@ function About(){
                 
                 <div className={styles.section2}>
                     <div className={styles.descriptionContainer}>
-                        <p>I’m a content creator fueled by creativity, 
-                            curiosity, and a serious love for capturing 
-                            moments that feel like something. I’m all 
-                            about blending mood, music, and motion 
-                        </p>
+                        <p>I bring brand ads to life through mood, motion, and storytelling.</p>
+                        <p>On TikTok and Instagram, I shoot content that feels real, story-driven, and always on vibe.</p>
 
-                        <p>My work lives across platforms like TikTok, Instagram, and YouTube, where I dive 
-                            into visuals that range from aesthetic edits to real-life snippets. I don’t believe in 
-                            just creating for the algorithm—I create for connection, for the vibe, and for the 
-                            art of it. When I’m not filming or editing, you’ll probably find me chasing light, 
-                            learning new transitions, or sketching out my next visual idea with too much 
-                            coffee
-                        </p>
                     </div>
 
                     <div className={styles.statsCard}>
@@ -70,10 +59,7 @@ function About(){
                         </div>
                     </div>
                 </div>
-                <div className={styles.scrollMore}>
-                <p>Scroll for More</p>
-                <i class="ri-arrow-down-line"></i>
-            </div>
+                
             </div>
             
             

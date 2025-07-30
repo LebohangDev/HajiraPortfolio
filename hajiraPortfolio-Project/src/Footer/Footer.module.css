@@ -104,6 +104,12 @@
 }
 
 
+
+ .footerSection .footerContainer .footerSocials img:hover{
+   cursor: pointer;
+ }
+
+
  .footerSection .footerContainer .footerLine hr{
     width: 85rem;
     border: 1px solid #FF60B5 ;
@@ -175,6 +181,11 @@
     height: 1.2rem;
  }
 
+
+  
+.footerSection .footerContainer .footerBottom .Socials img:hover{
+   cursor: pointer;
+ }
 
 
 

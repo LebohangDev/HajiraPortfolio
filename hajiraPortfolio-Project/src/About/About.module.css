@@ -308,6 +308,9 @@
     position: relative;
     top: 2%;
     right: 12%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15rem auto;
 }
 
 
@@ -348,6 +351,7 @@
     padding-right: 1.5rem;
     background-color: white;
     gap: 0.5rem;
+    height: fit-content;
     border: none;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #F2EEEE;
@@ -546,7 +550,7 @@
 
 .aboutContainer .section1 .userIMGContainer .socialIcons img:nth-child(1){
     width: 2.3rem;
-    height: 2rem;
+    height: 2.3rem;
     left: 5rem;
     bottom: 20rem;
     transform: rotate(30deg);
