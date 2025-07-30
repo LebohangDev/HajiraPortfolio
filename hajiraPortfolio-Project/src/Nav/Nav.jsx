@@ -19,7 +19,7 @@ function Nav({setActive, active}){
                         
                     </div>
                      <div className={active === 'Potfolio' ? styles.activeNav: styles.notActiveNav}>
-                        <h1><a href="public/portfolio-Hajira-compressed.pdf" download>Portfolio</a></h1>
+                        <h1><a href="/portfolio-Hajira-compressed.pdf" download>Portfolio</a></h1>
                         
 
                        
@@ -84,7 +84,7 @@ function Nav({setActive, active}){
                     </div>
                     <div className={active === 'Potfolio' ? styles.activeNav: styles.notActiveNav}>
                         <i className="ri-file-2-fill"></i>
-                        <h1><a href="public/portfolio-Hajira-compressed.pdf" download>Portfolio</a>
+                        <h1><a href="/portfolio-Hajira-compressed.pdf" download>Portfolio</a>
                             
                          </h1>
                         
