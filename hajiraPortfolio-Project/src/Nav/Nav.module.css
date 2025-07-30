@@ -1,4 +1,15 @@
 
+@keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+         transform: translateY( 0px);
+    }
+}
+
 .navSection{
     display: grid ;
     grid-template-columns: repeat(3, 3fr);
@@ -25,9 +36,12 @@
    position: fixed;
    background-color: white;
    z-index: 10000;
+   animation: fadeInTop 0.4s forwards;
    width: 90%;
-   padding-top: 2%;
-    border: none;
+   padding: 0.5rem;
+   opacity: 0;
+
+    box-shadow: 2px 2px 4px #F2EEEE;
    border-radius: 25px;
    height: 7rem;
    
