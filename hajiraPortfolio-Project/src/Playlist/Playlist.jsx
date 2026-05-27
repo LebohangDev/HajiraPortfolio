@@ -1,5 +1,5 @@
 import styles from "./Playlist.module.css";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { round } from "math"
 import { useEffect, useState, useRef } from "react";
 
@@ -10,6 +10,7 @@ function PlaylistSection() {
 
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(false);
+  const [showEmailAlert, setShowEmailAlert] = useState(false);
   const [code, setCode] = useState("AED");
   const [price, setPrice] = useState(19);
   const [symbol, setSymbol] = useState("AED");
@@ -58,7 +59,10 @@ function PlaylistSection() {
 
 
   const handleBuy = async () => {
-
+    if (!email || !isEmailValid) {
+      setShowEmailAlert(true);
+      return;
+    }
 
     try {
 
@@ -92,6 +96,40 @@ function PlaylistSection() {
 
   return (
     <div className={styles.playlistSection}>
+      <AnimatePresence>
+        {showEmailAlert && (
+          <motion.div
+            className={styles.modalOverlay}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setShowEmailAlert(false)}
+          >
+            <motion.div
+              className={styles.modalContent}
+              initial={{ scale: 0.9, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              transition={{ type: "spring", duration: 0.4 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className={styles.modalHeader}>
+                <h3>Email Required</h3>
+              </div>
+              <div className={styles.modalBody}>
+                <p>
+                  You must enter the email address to where you want the ebook to be received. Please ensure it is correct.
+                </p>
+              </div>
+              <div className={styles.modalFooter}>
+                <button className={styles.modalButton} onClick={() => setShowEmailAlert(false)}>
+                  GOT IT
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div className={styles.playlistContainer}>
         <motion.div
@@ -172,7 +210,7 @@ function PlaylistSection() {
               <span className={styles.label}>Price</span>
               <span className={styles.price}>{round(price) + " " + symbol}</span>
             </div>
-            <button disabled={!isEmailValid} className={styles.buyButton} onClick={() => { handleBuy() }}>
+            <button className={styles.buyButton} onClick={() => { handleBuy() }}>
               BUY PLAYLIST
             </button>
           </div>
