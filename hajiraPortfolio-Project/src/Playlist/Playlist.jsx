@@ -218,17 +218,7 @@ function PlaylistSection() {
     }
   };
 
-  const handleScrollToForm = () => {
-    console.log("Tracking event: Mobile scroll button click (gtag)");
-    window.gtag?.('event', 'mobile_scroll_to_form_clicked', {
-      page_name: 'spotify_playlist_checkout'
-    });
 
-    if (emailInputRef.current) {
-      emailInputRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
-      emailInputRef.current.focus();
-    }
-  };
 
   return (
     <div className={styles.playlistSection}>
@@ -281,9 +271,6 @@ function PlaylistSection() {
               alt="Curated Spotify Playlist cover"
             />
           </div>
-          <button className={styles.mobileScrollArrow} onClick={handleScrollToForm} aria-label="Scroll to purchase form">
-            <i className="ri-arrow-down-s-line"></i>
-          </button>
         </motion.div>
 
         <motion.div

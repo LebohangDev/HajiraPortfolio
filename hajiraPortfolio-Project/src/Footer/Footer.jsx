@@ -38,7 +38,7 @@ function Footer({ setActive, active }) {
                                 <i className="ri-copyright-line"></i>
                             </div>
                             <div className={styles.dev}>
-                                <p>Developed By CreatorsBlueprint</p>
+                                <p>Developed By <a href="https://creatorsblueprint.io" target="_blank" rel="noopener noreferrer">creatorsblueprint.io</a></p>
                             </div>
                         </div>
                     </div>

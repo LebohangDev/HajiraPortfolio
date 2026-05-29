@@ -111,13 +111,28 @@
 .dev p {
    font-size: 0.85rem;
    font-family: "Inter", sans-serif;
-   color: #A4A1A1;
+   color: #491636;
+   opacity: 0.75;
    letter-spacing: 1px;
    margin: 0;
 }
 
+.dev a {
+   color: #491636;
+   font-weight: 600;
+   text-decoration: none;
+   border-bottom: 1.5px dashed rgba(73, 22, 54, 0.4);
+   transition: all 0.25s ease-in-out;
+}
+
+.dev a:hover {
+   color: #ff77cd;
+   border-bottom-color: #ff77cd;
+}
+
 .footerCopyright i {
-   color: #9E9E9E;
+   color: #491636;
+   opacity: 0.75;
    font-size: 0.9rem;
 }
 

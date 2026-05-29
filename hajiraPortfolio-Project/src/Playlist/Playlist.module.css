@@ -226,6 +226,25 @@
     box-shadow: 2px 4px 18px #f763be;
     transition: 0.2s ease-in-out;
     white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.buyButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.45) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    animation: shine 3s infinite;
 }
 
 .buyButton:hover {
@@ -235,6 +254,18 @@
 
 .buyButton:active {
     transform: translateY(1px);
+}
+
+@keyframes shine {
+    0% {
+        left: -150%;
+    }
+    50% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
 }
 
 .emailInstruction {
@@ -387,6 +418,25 @@
     cursor: pointer;
     box-shadow: 2px 4px 20px #f763be;
     transition: 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.finalBuyButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.45) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    animation: shine 3s infinite;
 }
 
 .finalBuyButton:hover {
@@ -596,49 +646,15 @@
 
     .playlistContainer {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 3.5rem;
         width: 90%;
     }
 
     .imageWrapper {
+        display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .mobileScrollArrow {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 1.5rem;
-        background: #ffffff;
-        border: 1px solid #fcedf6;
-        border-radius: 50%;
-        width: 3.2rem;
-        height: 3.2rem;
-        color: #ff77cd;
-        font-size: 1.6rem;
-        cursor: pointer;
-        outline: none;
-        box-shadow: 0 4px 10px rgba(247, 99, 190, 0.05);
-        animation: bounce 2s infinite;
-        transition: all 0.2s ease;
-    }
-
-    .mobileScrollArrow:active {
-        transform: scale(0.9) translateY(0) !important;
-        background: #fff8fc;
-    }
-
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            transform: translateY(0);
-        }
-        40% {
-            transform: translateY(-8px);
-        }
-        60% {
-            transform: translateY(-4px);
-        }
+        order: 2; /* Put cover image below the fold */
     }
 
     .imageCard {
@@ -646,8 +662,11 @@
     }
 
     .infoWrapper {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         text-align: center;
+        order: 1; /* Put title and buy buttons at the very top */
     }
 
     .heading h1 {
