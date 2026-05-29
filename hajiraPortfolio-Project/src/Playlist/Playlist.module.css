@@ -9,15 +9,13 @@
 }
 
 .playlistSection {
-    /* background: #fffbff; */
     background-color: #FFFBFF;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     width: 100%;
     height: 100%;
-    padding-bottom: 2rem;
-
+    padding-bottom: 4rem;
 }
 
 .playlistContainer {
@@ -42,218 +40,124 @@
 .imageCard {
     background: #ffffff;
     border-radius: 24px;
-    box-shadow: 5px 5px 10px #f2eeee;
-    padding: 1.5rem;
+    box-shadow: 5px 5px 15px rgba(247, 99, 190, 0.08);
+    padding: 1.2rem;
     width: 100%;
     aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #fcedf6;
 }
 
-.imageCard img,
-.spotifyIframe {
+.imageCard img {
     width: 100%;
     height: 100%;
     display: block;
     border-radius: 18px;
-    object-fit: contain;
-}
-
-.embed img {
-    border-radius: 10px;
-    width: 100%;
-    height: 80px;
-
     object-fit: cover;
-    display: block;
 }
 
 .infoWrapper {
     width: 100%;
-    max-width: 40rem;
+    max-width: 42rem;
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
+    gap: 1.5rem;
 }
 
 .heading h2 {
     margin: 0;
     font-family: "Istok Web", sans-serif;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 6px;
     color: #d28cb8;
+    text-transform: uppercase;
 }
 
 .heading h1 {
-    margin: 0;
+    margin: 0.3rem 0 0 0;
     font-family: "Italiana", sans-serif;
-    font-size: 3.8rem;
-    letter-spacing: 8px;
+    font-size: 3.4rem;
+    line-height: 1.2;
+    letter-spacing: 2px;
     color: #ff77cd;
 }
 
-.description p:nth-child(1) {
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #ff77cd;
-    margin: 0 0 0.3rem 0;
+.subtitleBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.description p:nth-child(2) {
+.subtitle {
     font-family: "Inter", sans-serif;
-    font-weight: 300;
-    font-size: 0.95rem;
-    letter-spacing: 1.5px;
-    color: #d37db3;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #ff77cd;
     margin: 0;
 }
 
+.socialProof {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #d37db3;
+    font-style: italic;
+    margin: 0;
+}
 
-.purchaseRow {
-    margin-top: 1.5rem;
+.priceRowRedesign {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.2rem 1.5rem;
+    background: #fff8fc;
+    border: 1px solid #fce8f5;
+    border-radius: 18px;
+    margin-top: 0.5rem;
 }
 
-.priceBlock {
+.prices {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.2rem;
 }
 
-.label {
-    font-family: "Inter", sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #c5c5c5;
-}
-
-.price {
-    font-family: "Istok Web", sans-serif;
-    font-size: 1.8rem;
-    color: #ff77cd;
-}
-
-.buyButton {
-    border: none;
-    border-radius: 50px;
-    padding: 0.9rem 2.6rem;
-    background: linear-gradient(to right, #491636, #c83e95);
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    cursor: pointer;
-    box-shadow: 2px 4px 18px #f763be;
-    transition: 0.2s ease-in-out;
-}
-
-.buyButton:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-    box-shadow: none;
-    filter: grayscale(30%);
-}
-
-
-.buyButton:hover:disabled {
-    box-shadow: none;
-    transform: none;
-}
-
-
-.buyButton:hover {
-    box-shadow: 4px 6px 30px #f763be;
-    transform: translateY(-1px);
-}
-
-
-.note p {
+.wasPrice {
     font-family: "Inter", sans-serif;
     font-size: 0.85rem;
-    letter-spacing: 1px;
-    color: #b9b9b9;
-    margin: 0.5rem 0 0 0;
-}
-
-.successBanner,
-.cancelBanner {
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    animation: fadeIn 0.6s ease-in-out;
-}
-
-.successBanner {
-    background: #e8ffe8;
-    color: #3a9b3a;
-    border-bottom: 2px solid #b6e8b6;
-}
-
-.cancelBanner {
-    background: #ffe8e8;
-    color: #c44a4a;
-    border-bottom: 2px solid #f1b3b3;
-}
-
-.emailField {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    margin-top: 1rem;
-}
-
-.emailField label {
-    font-family: "Inter", sans-serif;
-    font-size: 0.9rem;
+    text-decoration: line-through;
     color: #c5a0c9;
     letter-spacing: 1px;
 }
 
-.emailField input {
-    padding: 0.9rem 1.2rem;
-    border-radius: 14px;
-    border: 1px solid #f3d2f7;
-    background: #fff0f8;
-    font-family: "Inter", sans-serif;
-    font-size: 0.9rem;
-    outline: none;
-    transition: 0.2s ease;
+.nowPrice {
+    font-family: "Istok Web", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff77cd;
 }
 
-.emailField input:focus {
-    border-color: #ff77cd;
-    box-shadow: 0 0 6px #ffd2f5;
-}
-
-.emailInstruction {
-    font-family: "Inter", sans-serif;
-    font-size: 0.8rem;
-    color: #d37db3;
-    margin: 0;
-    margin-top: 0.2rem;
-}
-
-
-/* Currency Select */
 .currencyWrapper {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    margin-bottom: 0.5rem;
+}
+
+.currencyLabel {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #c5c5c5;
+    letter-spacing: 1px;
 }
 
 .currencySelect {
-    padding: 0.6rem 1rem;
+    padding: 0.5rem 2rem 0.5rem 1rem;
     border-radius: 12px;
     border: 1px solid #f3d2f7;
     background: #fff0f8;
@@ -268,7 +172,6 @@
     background-repeat: no-repeat;
     background-position: right 0.7rem top 50%;
     background-size: 0.65rem auto;
-    padding-right: 2rem;
 }
 
 .currencySelect:focus {
@@ -276,67 +179,223 @@
     box-shadow: 0 0 6px #ffd2f5;
 }
 
-
-/* Mobile */
-
-@media (max-width: 767px) {
-    .playlistSection {
-        padding: 4rem 0 6rem;
-    }
-
-    .playlistContainer {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        width: 90%;
-    }
-
-    .imageCard {
-        max-width: 24rem;
-    }
-
-    .heading h1 {
-        font-size: 3rem;
-        letter-spacing: 6px;
-    }
-
-    .purchaseRow {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-
-    .buyButton {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .embed {
-        padding: 0.5rem;
-    }
-
-    .embed img {
-        height: 50px;
-        object-fit: contain;
-    }
+.checkoutForm {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: stretch;
+    margin-top: 0.5rem;
 }
 
-/* Tablet */
+.inputContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .playlistContainer {
-        grid-template-columns: 1fr;
-        gap: 4rem;
-        width: 85%;
-    }
+.emailInput {
+    width: 100%;
+    height: 100%;
+    padding: 0.9rem 1.2rem;
+    border-radius: 50px;
+    border: 1px solid #f3d2f7;
+    background: #fff0f8;
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.2s ease;
+    box-sizing: border-box;
+}
 
-    .imageCard {
-        max-width: 28rem;
-    }
+.emailInput:focus {
+    border-color: #ff77cd;
+    box-shadow: 0 0 6px #ffd2f5;
+}
 
-    .heading h1 {
-        font-size: 4rem;
-    }
+.buyButton {
+    border: none;
+    border-radius: 50px;
+    padding: 0.9rem 2rem;
+    background: linear-gradient(to right, #491636, #c83e95);
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 2px 4px 18px #f763be;
+    transition: 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+.buyButton:hover {
+    box-shadow: 4px 6px 30px #f763be;
+    transform: translateY(-1px);
+}
+
+.buyButton:active {
+    transform: translateY(1px);
+}
+
+.emailInstruction {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    color: #d37db3;
+    margin: 0;
+    margin-top: -0.5rem;
+    opacity: 0.8;
+}
+
+/* Value Text Section */
+.valueTextContainer {
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #fcedf6;
+    border-bottom: 1px solid #fcedf6;
+    margin: 4rem 0 2rem 0;
+}
+
+.valueTextContent {
+    width: 80%;
+    max-width: 55rem;
+    text-align: center;
+}
+
+.valueTextContent p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 1.45rem;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    color: #491636;
+    margin: 0;
+}
+
+/* Reviews Section */
+.reviewsSection {
+    width: 80%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.reviewsHeader {
+    text-align: center;
+}
+
+.reviewsHeader h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    color: #ff77cd;
+    margin: 0;
+}
+
+.reviewsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.reviewCard {
+    background: #ffffff;
+    border: 1px solid #fcedf6;
+    border-radius: 20px;
+    padding: 2.2rem;
+    box-shadow: 4px 6px 20px rgba(247, 99, 190, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reviewCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 10px 25px rgba(247, 99, 190, 0.08);
+}
+
+.stars {
+    display: flex;
+    gap: 0.25rem;
+    color: #ff77cd;
+    font-size: 1.1rem;
+}
+
+.reviewText {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #491636;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.reviewerName {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #d37db3;
+    letter-spacing: 0.5px;
+}
+
+/* Final CTA Section */
+.finalCtaSection {
+    width: 100%;
+    padding: 5rem 0;
+    background: linear-gradient(to right, #fff5fa, #fffafb);
+    border-top: 1px solid #fcedf6;
+    border-bottom: 1px solid #fcedf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.finalCtaContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.finalCtaContent h3 {
+    font-family: "Italiana", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #ff77cd;
+    margin: 0;
+}
+
+.finalBuyButton {
+    border: none;
+    border-radius: 50px;
+    padding: 1.1rem 3.5rem;
+    background: linear-gradient(to right, #491636, #c83e95);
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 2px 4px 20px #f763be;
+    transition: 0.2s ease-in-out;
+}
+
+.finalBuyButton:hover {
+    box-shadow: 4px 6px 32px #f763be;
+    transform: translateY(-1px);
+}
+
+.finalBuyButton:active {
+    transform: translateY(1px);
 }
 
 /* Custom Alert Modal styles */
@@ -415,4 +474,250 @@
 
 .modalButton:active {
     transform: translateY(1px);
+}
+
+.mobileScrollArrow {
+    display: none;
+}
+
+.mobileReviewsSlider {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.sliderTrack {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    min-height: 14rem;
+}
+
+.mobileReviewCard {
+    background: #ffffff;
+    border: 1px solid #fcedf6;
+    border-radius: 20px;
+    padding: 2.2rem;
+    box-shadow: 4px 6px 20px rgba(247, 99, 190, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sliderControls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.sliderArrow {
+    background: #ffffff;
+    border: 1px solid #fcedf6;
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(247, 99, 190, 0.04);
+    color: #ff77cd;
+    font-size: 1.2rem;
+    transition: 0.2s ease;
+    outline: none;
+}
+
+.sliderArrow:active {
+    transform: scale(0.9);
+    background: #fff8fc;
+}
+
+.sliderDots {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fcedf6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.activeDot {
+    background: #ff77cd;
+    width: 14px;
+    border-radius: 4px;
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .playlistContainer {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        width: 85%;
+    }
+
+    .imageCard {
+        max-width: 28rem;
+    }
+
+    .heading h1 {
+        font-size: 4rem;
+    }
+
+    .reviewsSection {
+        width: 85%;
+    }
+
+    .reviewsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+    .playlistSection {
+        padding: 4rem 0 6rem;
+    }
+
+    .playlistContainer {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        width: 90%;
+    }
+
+    .imageWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobileScrollArrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        background: #ffffff;
+        border: 1px solid #fcedf6;
+        border-radius: 50%;
+        width: 3.2rem;
+        height: 3.2rem;
+        color: #ff77cd;
+        font-size: 1.6rem;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0 4px 10px rgba(247, 99, 190, 0.05);
+        animation: bounce 2s infinite;
+        transition: all 0.2s ease;
+    }
+
+    .mobileScrollArrow:active {
+        transform: scale(0.9) translateY(0) !important;
+        background: #fff8fc;
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-8px);
+        }
+        60% {
+            transform: translateY(-4px);
+        }
+    }
+
+    .imageCard {
+        max-width: 24rem;
+    }
+
+    .infoWrapper {
+        align-items: center;
+        text-align: center;
+    }
+
+    .heading h1 {
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+    }
+
+    .priceRowRedesign {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .checkoutForm {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .inputContainer {
+        width: 100%;
+    }
+
+    .emailInput {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .buyButton {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .valueTextContent {
+        width: 90%;
+    }
+
+    .valueTextContent p {
+        font-size: 1.2rem;
+    }
+
+    .reviewsSection {
+        width: 90%;
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+
+    .reviewsHeader h2 {
+        font-size: 2rem;
+    }
+
+    .mobileReviewCard {
+        padding: 1.5rem;
+    }
+
+    .finalCtaSection {
+        padding: 3rem 0;
+    }
+
+    .finalCtaContent h3 {
+        font-size: 2rem;
+    }
+
+    .finalBuyButton {
+        width: 90%;
+        padding: 1rem 2rem;
+        font-size: 0.95rem;
+    }
 }

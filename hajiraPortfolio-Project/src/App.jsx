@@ -24,8 +24,51 @@ function App() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const payment = params.get("payment");
-    if (payment === "success") setPaymentActive("PaymentSuccess");
-    if (payment === "cancel") setPaymentActive("PaymentCancel");
+    if (payment === "success") {
+      setPaymentActive("PaymentSuccess");
+
+      // Verify we only track purchase once per session to avoid duplicate counts on page refresh
+      const purchaseFiredKey = "purchase_event_fired";
+      const hasPurchasedFired = sessionStorage.getItem(purchaseFiredKey);
+      if (!hasPurchasedFired) {
+        sessionStorage.setItem(purchaseFiredKey, "true");
+
+        // Extract transaction id from URL or fallback to order timestamp
+        const transactionId = params.get("payment_intent") || params.get("session_id") || "order_" + Date.now();
+        
+        let savedCurrency = "AED";
+        let savedPrice = 10;
+        try {
+          savedCurrency = localStorage.getItem("selected_currency") || "AED";
+          savedPrice = parseFloat(localStorage.getItem("selected_price") || "10");
+        } catch (e) {
+          console.warn("Could not retrieve price info from localStorage", e);
+        }
+
+        console.log("Tracking event: Purchase completed (gtag)", transactionId, savedCurrency, savedPrice);
+        window.gtag?.('event', 'purchase', {
+          transaction_id: transactionId,
+          currency: savedCurrency,
+          value: savedPrice,
+          items: [
+            {
+              item_id: 'hajira_spotify_playlist',
+              item_name: 'Hajira Spotify Playlist',
+              price: savedPrice,
+              quantity: 1
+            }
+          ]
+        });
+      }
+    }
+    if (payment === "cancel") {
+      setPaymentActive("PaymentCancel");
+      console.log("Tracking event: Purchase cancelled (gtag)");
+      window.gtag?.('event', 'purchase_cancelled', {
+        page_name: 'spotify_playlist_checkout',
+        product_name: 'Hajira Spotify Playlist'
+      });
+    }
   }, []);
 
   useEffect(() => {
