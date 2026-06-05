@@ -614,6 +614,40 @@
     border-radius: 4px;
 }
 
+/* 200K Followers Celebration Tag & Badge */
+.specialTag {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 2.5px;
+    color: #ff77cd;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+}
+
+.priceWasRow {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.dealTag {
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #ff77cd;
+    border: 1px solid rgba(255, 119, 205, 0.4);
+    background-color: rgba(255, 119, 205, 0.05);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
 /* Tablet Layout */
 @media (min-width: 768px) and (max-width: 1024px) {
     .playlistContainer {

@@ -281,6 +281,7 @@ function PlaylistSection() {
           transition={{ duration: 0.4, delay: 0.1 }}
         >
           <div className={styles.heading}>
+            <span className={styles.specialTag}>200K FOLLOWERS SPECIAL</span>
             <h2>SPOTIFY PLAYLIST</h2>
             <h1>The Playlist Everyone Keeps Asking For</h1>
           </div>
@@ -292,7 +293,10 @@ function PlaylistSection() {
 
           <div className={styles.priceRowRedesign}>
             <div className={styles.prices}>
-              <span className={styles.wasPrice}>Was {round(anchorPrice)} {symbol}</span>
+              <div className={styles.priceWasRow}>
+                <span className={styles.wasPrice}>Was {round(anchorPrice)} {symbol}</span>
+                <span className={styles.dealTag}>LIMITED TIME DEAL</span>
+              </div>
               <span className={styles.nowPrice}>Now {round(price)} {symbol}</span>
             </div>
 
